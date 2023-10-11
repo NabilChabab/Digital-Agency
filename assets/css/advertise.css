@@ -40,7 +40,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 35px 14%;
+    padding: 20px 14%;
     background-color: var(--bg-color);
     transition: all .4s ease;
     z-index: 1000;
@@ -133,4 +133,293 @@ header{
 .adver-img img{
     width: 100%;
     height: auto;
+}
+
+
+.cards{
+    width: 100%;
+    text-align: center;
+    padding: 8% 14%;
+}
+
+.cards h1{
+    font-size: 25px;
+}
+
+.cards p{
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.row{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.rows-1{
+    display: flex;
+    text-align: start;
+}
+
+.rows-1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.details h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-left: 20px;
+}
+
+.details p{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.cards2{
+    width: 100%;
+    text-align: center;
+    padding: 2% 14%;
+}
+
+.cards2 h1{
+    font-size: 25px;
+}
+
+.cards2 p{
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.rows-1{
+    display: flex;
+    text-align: start;
+}
+
+.rows-1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.details{
+    text-align: start;
+}
+
+.details h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-left: 20px;
+}
+
+.details p{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.details a{
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 15px;
+    display: inline-flex;
+    color: rgb(0, 102, 255);
+}
+
+.details a i{
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.team{
+    padding: 8% 14%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.team .title-sec h1{
+    font-size: 30px;
+}
+.team .title-sec p{
+    font-size: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cad{
+    background-color: #FFF5ED;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-flex;
+}
+
+.cad img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.details-col{
+    text-align: center;
+}
+
+.details-col h1{
+    font-weight: 500;
+    font-size: medium;
+}
+.details-col p{
+    font-size: small;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.icons a i{
+    color: #ff951d;
+    font-size: medium;
+}
+
+
+.subscribe{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/Group\ 79.png);
+    background-position: center;
+    background-size: cover;
+    padding: 6% 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.det{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 3rem;
+    background-color: white;
+    width: 60%;
+    padding: 2.5%;
+}
+
+.titles h1{
+    font-size: 25px;
+}
+.titles p{
+    font-size: 10px;
+    color: grey;
+    width: 70%;
+    margin-top: 10px;
+}
+
+
+form input{
+    background-color: #D4DAE2;
+    border: none;
+    padding: 15px 30px;
+    width: 65%;
+    border-radius: 10px;
+    color: black;
+}
+.txt3 p{
+    color: grey;
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+form a{
+    background-color: #DB4A87;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+}
+
+.copy img{
+    margin-right: 15px;
+    width: 25px;
+    height: auto;
+}
+
+.rows{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy h1{
+    font-size: 15px;
+    color: #0F2137;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.copy p{
+    color: grey;
+    font-size: small;
+}
+
+.det-foot h1{
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+
+.det-foot a{
+    color: grey;
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+
+.det-foot li img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-right: 10px;
 }
