@@ -44,6 +44,7 @@ header{
     background-color: var(--bg-color);
     transition: all .4s ease;
     z-index: 1000;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .navlist{
@@ -169,12 +170,15 @@ header{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    width: 100%;
 }
 
 .txts h1{
     font-size: medium;
     font-weight: 700;
     margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
 }
 
 .line1{
