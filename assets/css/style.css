@@ -1,41 +1,41 @@
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-	font-display: swap;
-	text-decoration: none;
-	list-style: none;
-	scroll-behavior: smooth;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-display: swap;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
 
 @font-face {
-	font-family: 'Pacifico';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Pacifico Regular'), local('Pacifico-Regular'),
-	  url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
-		format('woff2');
-	font-display: swap;
-  }
-  
-:root{
-	--bg-color: #FFFFFF;
-	--text-color: black;
-	--second-color: #5a7184;
-	--main-color: #6e54fa;
-	--big-font: 6rem;
-	--h2-font: 3rem;
-	--p-font: 1.1rem;
-}
-body{
-	background: var(--bg-color);
-	color: var(--text-color);
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+        url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
 }
 
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: black;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
 
 
-header{
+
+header {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -46,52 +46,52 @@ header{
     z-index: 1000;
 }
 
-.navlist{
+.navlist {
     display: flex;
 }
 
-.logo{
+.logo {
     display: flex;
     color: black;
     font-size: 20px;
 }
 
-.logo img{
+.logo img {
     margin-right: 15px;
     width: 100%;
     height: 30px;
 }
 
-.navlist a{
+.navlist a {
     color: black;
     margin: 0 20px;
     letter-spacing: 2px;
 }
 
-.navlist i{
+.navlist i {
     display: none;
     font-size: 25px;
     justify-content: center;
     align-items: center;
 }
 
-.btn{
+.btn {
     color: black;
     letter-spacing: 2px;
     margin-right: 20px;
 }
 
-.btn2{
+.btn2 {
     color: #0A8080;
     position: relative;
 }
 
-.line img{
+.line img {
     position: absolute;
     right: 14%;
 }
 
-.home{
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,17 +100,17 @@ header{
     text-align: center;
 }
 
-.title-sec h1{
+.title-sec h1 {
     color: black;
     font-size: 30px;
 }
 
-.title-sec p{
+.title-sec p {
     color: grey;
     margin: 15px;
 }
 
-.getbtn{
+.getbtn {
     background-color: #0A8080;
     color: white;
     letter-spacing: 1px;
@@ -120,16 +120,16 @@ header{
     border-radius: 5px;
 }
 
-.home-img{
+.home-img {
     position: relative;
 }
 
-.home-img img{
+.home-img img {
     width: 80%;
     height: 30%;
 }
 
-.cards{
+.cards {
     width: 100%;
     height: 100%;
     background-color: #FFF5ED;
@@ -138,46 +138,47 @@ header{
     padding: 8% 14%;
 }
 
-.cards h1{
+.cards h1 {
     font-size: 25px;
 }
 
-.cards p{
+.cards p {
     font-size: 10px;
     color: gray;
     margin-top: 15px;
 }
 
-.row{
+.row {
     margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
 }
-.rows-1{
+
+.rows-1 {
     display: flex;
     text-align: start;
 }
 
-.rows-1 img{
+.rows-1 img {
     width: 100px;
     height: 100px;
 }
 
-.details h1{
+.details h1 {
     font-size: 20px;
     font-weight: 500;
     color: rgb(34, 34, 34);
     margin-left: 20px;
 }
 
-.details p{
+.details p {
     margin-left: 20px;
     width: 50%;
 }
 
-.quot{
+.quot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,31 +187,32 @@ header{
 
 
 
-.quot img{
+.quot img {
     position: relative;
     right: 20%;
     width: 32px;
     height: 32px;
 }
-.quot p{
+
+.quot p {
     position: absolute;
     width: 30%;
     font-size: 18px;
-    bottom:  33%;
+    bottom: 33%;
     text-align: start;
 }
 
-.quot .p2{
+.quot .p2 {
     color: grey;
     bottom: 30%;
     font-size: 10px;
 }
 
-.social{
+.social {
     margin-top: 18%;
 }
 
-.line2{
+.line2 {
     width: 150px;
     height: 2px;
     max-width: 100%;
@@ -218,7 +220,7 @@ header{
     background-color: #A17857;
 }
 
-.supp{
+.supp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,46 +228,53 @@ header{
     margin-top: 50px;
 }
 
-.supp img{
+.supp img {
     width: 100px;
     height: auto;
 }
 
 @media screen and (max-width : 500px) {
-    header{
-        background-color: #ffffff;
+    header {
+        background-color: #0A8080;
         bottom: -2%;
         position: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 22px 30%;
+        padding: 30px 0%;
         width: 100%;
         border-radius: 20px;
         box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.336);
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .other{
+    .other {
         display: none;
     }
 
-    .navlist li{
+    .navlist li {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
     }
-   
-    .navlist i{
-        display: block;
-        color: #0A8080;
+
+    .navlist span {
+        color: white;
+        display: none;
     }
 
-    .home{
+    .navlist i {
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .home {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -273,16 +282,18 @@ header{
         padding: 10% 14%;
         text-align: center;
     }
-    .title-sec h1{
+
+    .title-sec h1 {
         width: 100%;
         font-size: 20px;
     }
-    .home-img img{
+
+    .home-img img {
         width: 100%;
         height: auto;
     }
 
-    .cards{
+    .cards {
         width: 100%;
         height: 100%;
         background-color: #FFF5ED;
@@ -291,69 +302,75 @@ header{
         padding: 8% 14%;
     }
 
-    .cards h1{
+    .cards h1 {
         font-size: 20px;
     }
 
-    .row{
+    .row {
         padding: 0 14%;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
+        margin-bottom: 60px;
     }
 
-    .rows-1 img{
+    .rows-1 img {
         width: 70px;
         height: 70px;
     }
 
-    .details h1{
+    .details h1 {
         font-size: 10px;
     }
-    .details p{
+
+    .details p {
         width: 100%;
         font-size: 10px;
     }
 
-    .quot{
+    .quot {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10%;
+        margin-top: 1%;
     }
-    
-    .quot img{
+
+    .quot img {
         position: relative;
         right: 32%;
         width: 25px;
         height: 25px;
     }
-    .quot p{
+
+    .quot p {
         position: absolute;
         width: 50%;
         font-size: 8px;
-        bottom:  37%;
+        bottom: 29%;
         text-align: start;
     }
-    
-    .quot .p2{
+
+    .quot .p2 {
         color: grey;
-        bottom: 35%;
+        bottom: 25%;
         font-size: 5px;
+        margin-bottom: 20px;
     }
-    .supp{
+
+    .supp {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
         margin-top: 50px;
     }
-    .supp img{
+
+    .supp img {
         width: 80px;
         height: auto;
     }
 }
 
-.team{
+.team {
     padding: 45% 14%;
     justify-content: center;
     text-align: center;
@@ -361,43 +378,45 @@ header{
     height: 100vh;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 10%;
     gap: 3rem;
 }
 
-.col img{
+.col img {
     background-color: #FFFAF6;
     padding: 25px 25px 0 25px;
     align-items: center;
 }
 
-.details-col{
+.details-col {
     text-align: start;
 }
 
-.details-col h1{
+.details-col h1 {
     font-weight: 500;
     font-size: medium;
 }
-.details-col p{
+
+.details-col p {
     font-size: small;
     color: grey;
     margin-bottom: 10px;
 }
 
-.icons{
+.icons {
     display: flex;
     gap: 1rem;
 }
-.icons a i{
+
+.icons a i {
     color: #0A8080;
     font-size: medium;
 }
 
-.icon-s{
+.icon-s {
     background-color: white;
     width: 50px;
     height: 50px;
@@ -411,47 +430,49 @@ header{
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.192);
 }
 
-.icon-s i{
+.icon-s i {
     color: black;
 }
 
-.col-final{
-    filter:contrast(50%)
+.col-final {
+    filter: contrast(50%)
 }
 
 @media screen and (max-width : 500px) {
-    .team{
+    .team {
         padding: 220% 14%;
         justify-content: center;
         text-align: center;
     }
-    .team p{
+
+    .team p {
         font-size: 8px;
     }
-    .container{
+
+    .container {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
         margin-top: 20%;
     }
 
-    .col-final{
-        filter:contrast(100%)
+    .col-final {
+        filter: contrast(100%)
     }
 
-    .icon-s{
+    .icon-s {
         display: none;
     }
 
 }
 
-.blog .title-sec{
+.blog .title-sec {
     margin-top: 12%;
 }
 
-.col__blog{
+.col__blog {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     align-items: center;
     justify-content: center;
@@ -459,37 +480,38 @@ header{
     margin-top: 10%;
 }
 
-.col-blog h1{
+.col-blog h1 {
     font-size: medium;
     text-align: start;
     width: 75%;
 }
 
-.col-blog p{
+.col-blog p {
     font-size: small;
     width: 70%;
     margin-top: 15px;
     color: gray;
 }
 
-.col-blog .txt{
+.col-blog .txt {
     background-color: #FFF5ED;
     padding: 30px;
     margin-bottom: 20px;
     width: 90%;
 }
 
-.col-blog .txt h1{
+.col-blog .txt h1 {
     width: 90%;
 }
 
-.col-blog .image img{
+.col-blog .image img {
     position: relative;
     margin-bottom: 20px;
     width: 85%;
     height: 80%;
 }
-.col-blog .image .txt1{
+
+.col-blog .image .txt1 {
     position: absolute;
     bottom: -232%;
     color: white;
@@ -498,7 +520,7 @@ header{
     font-size: small;
 }
 
-.col-blog .image .txt2{
+.col-blog .image .txt2 {
     position: absolute;
     bottom: -256%;
     color: white;
@@ -507,7 +529,7 @@ header{
     font-size: small;
 }
 
-.subscribe{
+.subscribe {
     width: 100%;
     height: auto;
     background-image: url(../img/Group\ 79.png);
@@ -520,9 +542,9 @@ header{
     align-items: center;
 }
 
-.det{
+.det {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: start;
@@ -532,10 +554,11 @@ header{
     padding: 2.5%;
 }
 
-.titles h1{
+.titles h1 {
     font-size: 25px;
 }
-.titles p{
+
+.titles p {
     font-size: 10px;
     color: grey;
     width: 70%;
@@ -543,7 +566,7 @@ header{
 }
 
 
-form input{
+form input {
     background-color: #D4DAE2;
     border: none;
     padding: 15px 30px;
@@ -551,41 +574,42 @@ form input{
     border-radius: 10px;
     color: black;
 }
-.txt3 p{
+
+.txt3 p {
     color: grey;
     font-size: 8px;
     margin-top: 10px;
     margin-left: 2px;
 }
 
-form a{
+form a {
     background-color: #DB4A87;
     color: white;
     padding: 10px 20px;
     margin-left: 10px;
 }
 
-footer{
+footer {
     width: 100%;
     height: auto;
     padding: 5% 10%;
 }
 
-.copy img{
+.copy img {
     margin-right: 15px;
     width: 25px;
     height: auto;
 }
 
-.rows{
+.rows {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
     justify-content: center;
     align-items: center;
 }
 
-.copy h1{
+.copy h1 {
     font-size: 15px;
     color: #0F2137;
     font-weight: 400;
@@ -594,25 +618,25 @@ footer{
     margin-top: 10px;
 }
 
-.copy p{
+.copy p {
     color: grey;
     font-size: small;
 }
 
-.det-foot h1{
+.det-foot h1 {
     font-weight: 600;
     font-size: large;
     margin-bottom: 30px;
     vertical-align: middle;
 }
 
-.det-foot a{
+.det-foot a {
     color: grey;
     margin-bottom: 10px;
     display: inline-flex;
 }
 
-.det-foot li img{
+.det-foot li img {
     width: 20px;
     height: 20px;
     vertical-align: middle;
@@ -622,132 +646,134 @@ footer{
 
 @media screen and (max-width : 500px) {
 
-    .blog .title-sec{
+    .blog .title-sec {
         margin-top: 10%;
     }
-    
-    .col__blog{
+
+    .col__blog {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
         align-items: center;
         justify-content: center;
         text-align: start;
         margin-top: 10%;
     }
-    
-    .col-blog h1{
+
+    .col-blog h1 {
         font-size: medium;
         text-align: start;
         width: 90%;
     }
-    
-    .col-blog p{
+
+    .col-blog p {
         font-size: small;
         width: 70%;
         margin-top: 15px;
         color: gray;
     }
-    
-    .col-blog .txt{
+
+    .col-blog .txt {
         background-color: #FFF5ED;
         padding: 30px;
         margin-bottom: 20px;
         width: 100%;
     }
-    
-    .col-blog .txt h1{
+
+    .col-blog .txt h1 {
         width: 100%;
-        
+
     }
-    
-    .col-blog .image img{
+
+    .col-blog .image img {
         position: relative;
         margin-bottom: 20px;
         width: 100%;
         height: 80%;
     }
-    .col-blog .image .txt1{
-        position: absolute;
-        bottom: -438%;
-        color: rgb(255, 255, 255);
-        margin: 10px 0 50px 10px;
-        width: 50%;
-        font-size: small;
+
+    .col-blog .image .txt1 {
+        display: none;
     }
-    
-    .col-blog .image .txt2{
-        position: absolute;
-        bottom: -465%;
-        color: white;
-        margin: 10px 0 50px 10px;
-        width: 50%;
-        font-size: small;
+
+    .col-blog .image .txt2 {
+        display: none;
     }
 }
 
 @media screen and (max-width : 500px) {
 
-    .subscribe{
+    .subscribe {
         width: 100%;
         height: auto;
         background-image: url(../img/Group\ 79.png);
         background-position: center;
         background-size: cover;
-        margin-top: 580%;
-        padding: 6% 80px;
+        margin-top: 680%;
+        padding: 6% 30px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
-    .det{
+
+    .det {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
-        text-align: start;
+        text-align: center;
         gap: 3rem;
         background-color: white;
         width: 100%;
         padding: 2.5%;
     }
-    
-    .titles h1{
+
+    .titles h1 {
         font-size: 25px;
     }
-    .titles p{
+
+    .titles p {
         font-size: 10px;
         color: grey;
-        width: 70%;
+        width: 100%;
         margin-top: 10px;
+        text-align: center;
     }
 
-    
-form input{
-    background-color: #D4DAE2;
-    border: none;
-    padding: 15px 30px;
-    width: 100%;
-    border-radius: 10px;
-    color: black;
+
+    form input {
+        background-color: #D4DAE2;
+        border: none;
+        padding: 15px 30px;
+        width: 100%;
+        border-radius: 10px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .txt3 p {
+        color: grey;
+        font-size: 8px;
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+    form a {
+        background-color: #DB4A87;
+        color: white;
+        padding: 10px 20px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .rows {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
-.txt3 p{
-    color: grey;
-    font-size: 8px;
-    margin-top: 10px;
-    margin-left: 2px;
-}
-
-form a{
-    background-color: #DB4A87;
-    color: white;
-    padding: 10px 20px;
-    margin-left: 10px;
-}
-   
-}
-
-
-
-
