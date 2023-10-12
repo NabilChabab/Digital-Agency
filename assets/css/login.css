@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-display: swap;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+        url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: black;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 14%;
+    background-color: var(--bg-color);
+    transition: all .4s ease;
+    z-index: 1000;
+}
+
+.navlist {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    color: black;
+    font-size: 20px;
+}
+
+.logo img {
+    margin-right: 15px;
+    width: 100%;
+    height: 30px;
+}
+
+.navlist a {
+    color: black;
+    margin: 0 20px;
+    letter-spacing: 2px;
+}
+
+.navlist i {
+    display: none;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: black;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.btn2 {
+    color: #0A8080;
+    position: relative;
+}
+
+.line img {
+    position: absolute;
+    right: 14%;
+}
+
+.row{
+    display: flex;
+}
+
+.log{
+    width: 100%;
+    height: 100vh;
+}
+.det{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.det img{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.log{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.log h1{
+    font-size: 30px;
+}
+.log p{
+    color: grey;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+    width: 80%;
+}
+
+form input:first-child{
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 60%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+form input[type = "password"]{
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 60%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+form button{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #0A8080;
+    border: none;
+    width: 40%;
+    margin-top: 50px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form a{
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+form a span{
+    vertical-align: middle;
+    color: black;
+    font-weight: bold;
+}
+
+
