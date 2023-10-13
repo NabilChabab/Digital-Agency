@@ -113,7 +113,7 @@ header{
 }
 
 .title-sec p{
-    color: grey;
+    color: black;
     margin: 15px 0;
 }
 
@@ -209,7 +209,7 @@ header{
 }
 
 .col-1 p{
-    color: grey;
+    color: black;
     line-height: 40px;
     margin-top: 20px;
 }
@@ -296,12 +296,12 @@ header{
 
 .detailss p{
     font-size: 25px;
-    color: grey;
+    color: black;
     margin-bottom: 50px;
 }
 
 .detailss .p1{
-    color: grey;
+    color: black;
     font-size: 15px;
     line-height: 30px;
 }
@@ -336,7 +336,7 @@ header{
 }
 .titles p{
     font-size: 10px;
-    color: grey;
+    color: black;
     width: 70%;
     margin-top: 10px;
 }
@@ -351,7 +351,7 @@ form input{
     color: black;
 }
 .txt3 p{
-    color: grey;
+    color: black;
     font-size: 8px;
     margin-top: 10px;
     margin-left: 2px;
@@ -394,7 +394,7 @@ footer{
 }
 
 .copy p{
-    color: grey;
+    color: black;
     font-size: small;
 }
 
@@ -406,7 +406,7 @@ footer{
 }
 
 .det-foot a{
-    color: grey;
+    color: black;
     margin-bottom: 10px;
     display: inline-flex;
 }
@@ -511,7 +511,7 @@ footer{
 
     .titles p {
         font-size: 10px;
-        color: grey;
+        color: black;
         width: 100%;
         margin-top: 10px;
         text-align: center;
@@ -529,7 +529,7 @@ footer{
     }
 
     .txt3 p {
-        color: grey;
+        color: black;
         font-size: 8px;
         margin-top: 10px;
         margin-left: 2px;
@@ -631,7 +631,7 @@ footer{
     }
     
     .col-1 p{
-        color: grey;
+        color: black;
 
         margin-top: 20px;
         font-size: 12px;
@@ -714,12 +714,12 @@ footer{
     
     .detailss p{
         font-size: 25px;
-        color: grey;
+        color: black;
         margin-bottom: 50px;
     }
     
     .detailss .p1{
-        color: grey;
+        color: black;
         font-size: 11px;
         
     }

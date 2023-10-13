@@ -113,7 +113,7 @@ header{
 }
 
 .title-sec p{
-    color: grey;
+    color: black;
     margin: 15px 0;
 }
 
@@ -175,7 +175,7 @@ header{
 }
 .details-col p{
     font-size: small;
-    color: grey;
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -241,7 +241,7 @@ footer{
 }
 
 .copy p{
-    color: grey;
+    color: black;
     font-size: small;
 }
 
@@ -253,7 +253,7 @@ footer{
 }
 
 .det-foot a{
-    color: grey;
+    color: black;
     margin-bottom: 10px;
     display: inline-flex;
 }
@@ -282,7 +282,7 @@ footer{
     font-size: 3.5rem;
 }
 .news-text p{
-	color: grey;
+	color: black;
 	line-height: 30px;
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -500,7 +500,7 @@ footer{
     }
     .details-col p{
         font-size: small;
-        color: grey;
+        color: black;
         margin-bottom: 10px;
     }
     
@@ -540,7 +540,7 @@ footer{
         width: 100%;
     }
     .news-text p{
-        color: grey;
+        color: black;
         line-height: 30px;
         font-size: 1rem;
         text-align: center;
