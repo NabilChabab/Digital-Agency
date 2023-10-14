@@ -63,10 +63,33 @@ header {
 }
 
 .navlist a {
+    position: relative;
     color: black;
     margin: 0 20px;
     letter-spacing: 2px;
+    transition: all .4s ease;
 }
+
+.navlist a:hover{
+    color: #0A8080;
+}
+
+.navlist a::after{
+    position: absolute;
+    background-color: #0A8080;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all .4s ease;
+}
+
+.navlist a:hover::after{
+    width: 70%;
+}
+
+
 
 .navlist i {
     display: none;
@@ -79,6 +102,11 @@ header {
     color: black;
     letter-spacing: 2px;
     margin-right: 20px;
+    transition: all .4s ease;
+}
+
+.btn:hover{
+    color: #0A8080;
 }
 
 .btn2 {
