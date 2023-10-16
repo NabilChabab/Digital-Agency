@@ -7,7 +7,7 @@ btn.onclick = () => {
         alert("Please Fill all inputs !");
     }
     else if(email.value == "nabil.chabab@gmail.com" && pass.value == "123456"){
-        window.location.replace("https://digital-agency-1.vercel.app/index.html");
+        alert("Welcome!!!");
     }
     else{
         alert("Ghayerha");
