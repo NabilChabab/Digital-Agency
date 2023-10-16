@@ -4,12 +4,12 @@ var btn = document.getElementById("btnlog");
 
 btn.onclick = () => {
     if(email.value == "" || pass.value == ""){
-        alert("error 404");
+        alert("Please Fill all inputs !");
     }
     else if(email.value == "nabil.chabab@gmail.com" && pass.value == "123456"){
-        alert("nice");
+        alert("Welcome!!!");
     }
     else{
-        alert("Ghayerha")
+        alert("Ghayerha");
     }
 };
