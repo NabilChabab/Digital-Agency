@@ -75,6 +75,10 @@ header{
     color: #0A8080;
 }
 
+li .active{
+    color: #0A8080;
+}
+
 .navlist a::after{
     position: absolute;
     background-color: #0A8080;

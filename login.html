@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for.">
-	<meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for.">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
 
-	<title>Digital Agency</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <title>Digital Agency</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link rel="shortcut icon" href="assets/img/Group.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-	<link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
-	<!--header--->
-	<header>
-		<a href="index.html" class="logo"><img src="assets/img/Group.png" alt="#">Innovations</a>
+    <!--header--->
+    <header>
+        <a href="index.html" class="logo"><img src="assets/img/Group.png" alt="#">Innovations</a>
         <ul class="navlist">
             <li><a href="index.html" aria-label="Read more"><i class='bx bx-home-alt-2'></i><span>Home</span></a></li>
-            <li><a href="advertise.html" aria-label="Read more"><i class='bx bx-message-alt-add' ></i><span>Advertise</span></a></li>
-            <li><a href="support.html" aria-label="Read more"><i class='bx bx-support' ></i><span>Support</span></a></li>
-            <li><a href="about.html" aria-label="Read more"><i class='bx bx-info-circle' ></i><span>About</span></a></li>
+            <li><a href="advertise.html" aria-label="Read more"><i
+                        class='bx bx-message-alt-add'></i><span>Advertise</span></a></li>
+            <li><a href="support.html" aria-label="Read more"><i class='bx bx-support'></i><span>Support</span></a></li>
+            <li><a href="about.html" aria-label="Read more"><i class='bx bx-info-circle'></i><span>About</span></a></li>
         </ul>
         <div class="other">
             <a href="#" class="btn" aria-label="Read more">Login</a>
@@ -34,31 +40,71 @@
                 <img src="assets/img/line.png" alt="#">
             </div>
         </div>
-	</header>
+    </header>
 
-    <section class="home">
-        <div class="row">
-            <div class="log">
-                <h1>Let's Get You in!</h1>
-                <p>Login To your Account</p>
-                <form action="#">
-                    <input type="email" placeholder="E-mail" id="email">
-                    <input type="password" placeholder="Password" id="pass">
-                    <button type="submit"  id="btnlog">Login</button>
-                    <a href="#"><img src="assets/img/google.png" alt="#" aria-label="Read more"><span>Login With Google Account</span></a>
-                </form>
-                <div class="reg">
-                    <h1>Don't Have an Account !</h1>
-                    <a href="signup.html" aria-label="Read more">Sign up</a>
+    <div class="main">
+        <section class="home">
+            <div class="row">
+                <div class="log">
+                    <h1>Let's Get You in!</h1>
+                    <p>Login To your Account</p>
+                    <form id="account-form" action="index.html" method="GET">
+
+                        <div class="form">
+                            <input type="email" placeholder="E-mail" name="Email" id="email">
+                            <i class='bx bxs-check-circle'></i>
+                            <i class='bx bxs-info-circle'></i>
+                            <p>Error Message</p>
+                        </div>
+                        <div class="form">
+                            <input type="password" placeholder="Password" name="Password" id="password">
+                            <i class='bx bxs-check-circle'></i>
+                            <i class='bx bxs-info-circle'></i>
+                            <p>Error Message</p>
+                        </div>
+
+                        <button type="submit" class="sub">login</button>
+                        <a href="#"><img src="assets/img/google.png" alt="#"><span>Login With Google Account</span></a>
+                    </form>
+                    <div class="reg">
+                        <h1>Don't Have an Account !</h1>
+                        <a href="signup.html" aria-label="Read more">Sign up</a>
+                    </div>
+                </div>
+                <div class="det">
+                    <img src="assets/img/illustration2.png" alt="#">
                 </div>
             </div>
-            <div class="det">
-                <img src="assets/img/illustration2.png" alt="#">
+        </section>
+    </div>
+
+    <div class="mob">
+        <section class="home">
+            <div class="row">
+                <div class="log">
+                    <h1>Let's Get You in!</h1>
+                    <p>Login To your Account</p>
+                    <img src="assets/img/Woman2.png" alt="image" class="img">
+                    <form action="#">
+                        <input type="email" placeholder="E-mail" id="email">
+                        <input type="password" placeholder="Password" id="pass">
+                        <button type="submit" id="btnlog">Login</button>
+                        <a href="advertise.html"><img src="assets/img/google.png" alt="#"
+                                aria-label="Read more"><span>Login With Google Account</span></a>
+                    </form>
+                    <div class="reg">
+                        <h1>Don't Have an Account !</h1>
+                        <a href="signup.html" aria-label="Read more">Sign up</a>
+                    </div>
+                </div>
+                <div class="det">
+                    <img src="assets/img/illustration2.png" alt="#">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
-    <script src="assets/js/script.js"></script>
-    
-</body>    
+    <script src="assets/js/login.js"></script>
+
+</body>

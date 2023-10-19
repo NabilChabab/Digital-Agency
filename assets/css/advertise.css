@@ -90,6 +90,10 @@ header{
     width: 70%;
 }
 
+li .active{
+    color: #0A8080;
+}
+
 
 .navlist i{
     display: none;
