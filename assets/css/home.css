@@ -182,6 +182,12 @@ header {
     right: 14%;
 }
 
+#menu {
+    font-size: 30px;
+    display: none;
+    z-index: 10001;
+}
+
 .home {
     display: flex;
     flex-direction: column;
@@ -586,167 +592,241 @@ footer {
     display: none;
 }
 
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 1330px) {
 
-
-    header {
-        display: none;
-    }
-
-    .main {
-
-        display: none;
-    }
-
-    .mob {
+    #menu {
         display: block;
-        background-color: #e6d8cc;
-        width: 100%;
-        height: 100%;
-        gap: 3rem;
+        cursor: pointer;
+    }
+
+    .navlist {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 150px 30px;
+        gap: 50px;
+        background-color: #0A8080;
+        transition: all .4s ease;
+    }
+
+    .other{
+        display: none;
+    }
+
+    li .active{
+        color: #e6d8cc;
+    }
+
+    .navlist a {
+        top: 100px;
+    }
+
+    .navlist a:hover {
+        color: var(--bg-color);
+    }
+
+    .btn a {
+        display: none;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        padding: 5% 5%;
     }
 
-    .mob_img img {
-        margin-top: 2rem;
-        width: 110%;
-        height: auto;
+    .social {
+        -webkit-transform: none;
+        margin-top: 100px;
     }
 
-    .mob_title h1 {
-        color: rgb(3, 7, 26);
+    .text h1 {
+        font-size: 30px;
     }
 
-    .mob_title p {
-        font-size: 15px;
-        color: rgb(54, 54, 54);
-        margin-bottom: 50px;
+    .text h1 span {
+        font-size: 40px;
     }
 
-    .mob_title p span {
-        font-size: 20px;
-    }
-
-    .mob_title a {
-        color: white;
-        background-color: #0F2137;
-        padding: 12px 50px;
-        border-radius: 15px;
-    }
-
-
-    .login {
-        width: 100%;
-        height: auto;
-    }
-
-    .log img {
-        width: 50%;
-        height: auto;
-    }
-
-    form {
+    .btns {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: relative;
     }
 
-    form input {
+    .more i {
+        display: none;
+    }
+
+    .img img {
+        width: 40%;
+        height: auto;
+    }
+
+    .quot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .quot p{
+        font-size: 15px;
+        top: 62%;
+    }
+
+    .quot .p2{
+        top: 73%;
+    }
+
+    .subscribe {
+
+        margin-top: 120%;
+        padding: 6% 0px;
+     
+    }
+
+    .det {
+        width: 80%;
+        padding: 2.5%;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width : 467px) {
+
+
+
+
+    .main {
+        display: none;
+    }
+
+    header{
+        background-color: #E6D8CC;
+    }
+    #menu{
+        color: #0F2137;
+    }
+    .navlist {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 270px;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 30px;
+        gap: 50px;
+        background-color: #0A8080;
+        transition: all .4s ease;
+    }
+    .open {
+        left: 0;
+    }
+
+    .mob{
+        display: block;
+        padding: 25% 5%;
         width: 100%;
+        height: 100vh;
+        background-color: #E6D8CC;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    form input{
+        width: 300px;
         background-color: white;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 18px;
+        margin-left: 30px;
+
+    }
+
+    .h-img{
+        width: 280px;
+        height: 170px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        object-fit: cover;
+        margin-left: 38px;
+    }
+
+    .row-mob{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title h1{
+        display: inline-flex;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        font-size: 20px;
+        color: #0F2137;
+    }
+    .line-t{
+        width: 50px;
+        background-color: #0F2137;
+        height: 7px;
+        border-radius: 50px;
+    }
+    .view a{
+        color: grey;
+        font-size: 12px;
+    }
+
+    .rows-mob{
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rows-1-mob{
+        background-color: #DCDCDC;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
     }
 
-
-    form button {
-        color: white;
-        background-color: #0F2137;
-        padding: 15px 7rem;
-        border-radius: 15px;
-        border: none;
-        margin-bottom: 10px;
-        margin-left: 5px;
+    .rows-1-mob img{
+        width: 60px;
+        height: 60px;
     }
 
-    form a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
+    .details-mob h1{
+        font-size: 15px;
+    }
+
+    .details-mob p{
         color: black;
-        border-radius: 15px;
-        margin-bottom: 30px;
-        font-size: 13px;
-    }
-
-    form .google img {
-        width: 30px;
-        height: 30px;
-        margin-right: 20px;
-    }
-
-    .reg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        gap: 5px;
-    }
-
-    .reg h1 {
         font-size: 15px;
     }
 
-    .reg a {
-        font-size: 15px;
-        color: rgb(27, 106, 255);
-    }
-
-
-    .error input {
-        border: 3px red solid;
-    }
-
-    .success input {
-        border: 3px green solid;
-    }
-
-    .form i {
-        font-size: 20px;
-        position: absolute;
-        right: 60px;
-        margin-top: 15px;
-        visibility: hidden;
-    }
-
-
-    .success i.bxs-check-circle {
-        visibility: visible;
-        color: green;
-    }
-
-    .error i.bxs-info-circle {
-        visibility: visible;
-        color: red;
-    }
-
-
-    .form p {
-        font-size: 15px;
-        color: red;
-        visibility: hidden;
-        float: left;
-        width: 35%;
-    }
-
-    .error p {
-        visibility: visible;
-    }
 
 
 

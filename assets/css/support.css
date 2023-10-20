@@ -162,13 +162,7 @@ li .active{
     height: auto;
 }
 
-.team{
-    padding: 4% 14%;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-}
+
 
 .team .title-sec h1{
     font-size: 30px;
@@ -178,11 +172,19 @@ li .active{
     font-size: 15px;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-top: 10%;
-    gap: 3rem;
+
+.team {
+    padding: 5% 25%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.swiper{
+    margin-top: 8rem;
+    
 }
 
 .col img{
@@ -214,27 +216,6 @@ li .active{
     font-size: medium;
 }
 
-.icon-s{
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border-radius: 50%;
-    position: absolute;
-    right: 30%;
-    bottom: -60%;
-    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.192);
-}
-
-.icon-s i{
-    color: black;
-}
-
-.col-final{
-    filter:contrast(50%)
-}
 
 
 footer{

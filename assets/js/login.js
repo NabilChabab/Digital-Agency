@@ -4,12 +4,7 @@ const pass = document.querySelector("#password");
 
 
 
-
-
-
-
-
-form.addEventListener('submit' , (event) =>{
+const test = (event) => {
     
     validateForm();
     if(isFormValid() == true){
@@ -18,7 +13,11 @@ form.addEventListener('submit' , (event) =>{
     else{
         event.preventDefault();
     }
-});
+}
+
+
+
+form.addEventListener('submit' , test);
 
 
 function isFormValid(){
@@ -33,7 +32,7 @@ function isFormValid(){
     return res;
 }
 
-function validateForm() {
+const validateForm = () => {
  
 
     //email

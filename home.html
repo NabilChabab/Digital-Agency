@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="shortcut icon" href="assets/img/Group.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -30,6 +30,7 @@
 <body>
     <!--header--->
     <header>
+        <div class="bx bx-menu" id="menu"></div>
         <a href="index.html" class="logo" aria-label="Read more"><img src="assets/img/Group.png" alt="#">Innovations</a>
         <ul class="navlist">
             <li><a href="index.html" aria-label="Read more" title="go to home" class="active"><i
@@ -48,6 +49,7 @@
                 <img src="assets/img/line.png" alt="image">
             </div>
         </div>
+        
     </header>
 
     <div class="main">
@@ -302,50 +304,100 @@
         </footer>
     </div>
     <div class="mob">
-        <div class="mob_img">
-            <img src="assets/img/Woman1.png" alt="image">
+        <form action="#">
+            <input type="search" placeholder="Search">
+        </form>
+        <img src="assets/img/Nunito – 3D illustration + Hero header.jpg" alt="image" class="h-img">
+        <div class="row-mob">
+            <div class="title">
+                <h1>Services</h1>
+                <div class="line-t"></div>
+            </div>
+            <div class="view">
+                <a href="advertise.html">View All</a>
+            </div>
         </div>
-        <div class="mob_title">
-            <h1>Welcome</h1>
-            <p><span>All on One Platform</span><br>Let's Get you in !! </p>
-            <a href="#login" class="home_btn">Get Started</a>
-        </div>
-        <section class="login" id="login">
-
-
-            <div class="row">
-                <div class="log">
-                    <h1>Let's Get You in!</h1>
-                    <p>Login To your Account</p>
-                    <img src="assets/img/Woman2.png" alt="image" class="img">
-                    <form action="home.html" id="account-form" method="GET">
-                        <div class="form">
-                            <input type="email" placeholder="E-mail" id="email">
-                            <i class='bx bxs-check-circle'></i>
-                            <i class='bx bxs-info-circle'></i>
-                            <p>Error Message</p>
-                        </div>
-                        <div class="form">
-                            <input type="password" placeholder="Password" id="password">
-                            <i class='bx bxs-check-circle'></i>
-                            <i class='bx bxs-info-circle'></i>
-                            <p>Error Message</p>
-                        </div>
-                        <button type="submit" id="btnlog" class="sub">Login</button>
-                        <a href="#" class="google"><img src="assets/img/google.png" alt="#"
-                                aria-label="Read more"><span>Login With Google Account</span></a>
-                    </form>
-                    <div class="reg">
-                        <h1>Don't Have an Account !</h1>
-                        <a href="signup.html" aria-label="Read more">Sign up</a>
-                    </div>
+        <div class="rows-mob">
+            <div class="rows-1-mob" data-aos="fade-left" data-aos-duration="3000">
+                <img src="assets/img/image58.png" alt="#">
+                <div class="details-mob">
+                    <h1>Marketing & advertising</h1>
+                    <p>Get your info tests delivered...</p>
                 </div>
             </div>
-        </section>
+
+            <div class="rows-1-mob" data-aos="fade-right" data-aos-duration="3000">
+                <img src="assets/img/image62.png" alt="#">
+                <div class="details-mob">
+                    <h1>Ultimate development</h1>
+                    <p>Get your info tests delivered...</p>
+                </div>
+            </div>
+
+            <div class="rows-1-mob" data-aos="fade-left" data-aos-duration="3000">
+                <img src="assets/img/image64.png" alt="#">
+                <div class="details-mob">
+                    <h1>Business Enterprise</h1>
+                    <p>Get your info tests delivered...</p>
+                </div>
+            </div>
+        </div>
+        <div class="row-mob">
+            <div class="title">
+                <h1>Team</h1>
+                <div class="line-t"></div>
+            </div>
+        </div>
+
+        <div class="swiper">
+            <div class="container swiper-wrapper">
+                <div class="col swiper-slide" data-aos="fade-up" data-aos-duration="3000">
+
+                    <img src="assets/img/Asset-4-2.png" alt="#">
+                    <div class="details-col">
+                        <h1>Emmalee Mclain</h1>
+                        <p>Product Designer</p>
+                    </div>
+
+                </div>
+
+                <div class="col swiper-slide" data-aos="fade-down" data-aos-duration="3000">
+                    <img src="assets/img/Asset-2-1.png" alt="#">
+                    <div class="details-col">
+                        <h1>Emmalee Mclain</h1>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
+
+                <div class="col swiper-slide" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="assets/img/Asset-6-2.png" alt="#">
+                    <div class="details-col">
+                        <h1>Emmalee Mclain</h1>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
+
+                <div class="col-final swiper-slide" data-aos="fade-down" data-aos-duration="3000">
+                    <img src="assets/img/Asset-5-2.png" alt="#">
+                    <div class="details-col">
+                        <h1>Emmalee Mclain</h1>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
+                <!-- <div class="icon-s">
+                    <a href="#" aria-label="Read more"><i class='bx bxs-right-arrow'></i></a>
+                </div> -->
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
     </div>
     <script>
         AOS.init();
     </script>
+    <script src="assets/js/home.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/login.js"></script>
 </body>
