@@ -9,6 +9,7 @@ const test = (event) => {
     validateForm();
     if(isFormValid() == true){
         form.submit();
+        
     }
     else{
         event.preventDefault();
@@ -84,6 +85,7 @@ function isEmailValid(email){
     const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     return reg.test(email);
 }
+
 
 
 
