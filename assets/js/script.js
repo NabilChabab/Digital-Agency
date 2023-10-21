@@ -52,3 +52,4 @@ const swiper = new Swiper('.swiper', {
   close.addEventListener('click' , ()=>{
     popup.classList.add("trnsis_remove");
   });
+

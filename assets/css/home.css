@@ -743,6 +743,10 @@ footer {
         left: 0;
     }
 
+    .logo{
+        display: none;
+    }
+
     .mob{
         display: block;
         padding: 25% 5%;
@@ -827,13 +831,7 @@ footer {
         font-size: 15px;
     }
 
-    .mob-team{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
-
+    
 
     .col-team{
         background-color: #EFE2DA;
