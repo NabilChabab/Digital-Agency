@@ -125,8 +125,9 @@ li .active{
 }
 
 .advertise{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
+    justify-content: center;
     align-items: center;
     padding: 8% 14%;
     text-align: start;
@@ -233,7 +234,7 @@ li .active{
 .row{
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -295,7 +296,7 @@ li .active{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     margin-top: 10%;
     justify-content: center;
     align-items: center;
@@ -360,14 +361,14 @@ li .active{
 
 .det{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
     justify-content: center;
     align-items: center;
     text-align: start;
     gap: 3rem;
     background-color: white;
     width: 60%;
-    padding: 2.5%;
+    padding: 3%;
 }
 
 .titles h1{
@@ -417,7 +418,7 @@ footer{
 
 .rows{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(auto-fill , minmax(260px , 1fr));
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -463,57 +464,55 @@ footer{
     display: none;
 }
 
-@media screen and (max-width : 1330px) {
+@media screen and (max-width : 770px){
 
-    #menu {
-        display: block;
-        cursor: pointer;
+    header{
+        padding: 20px 2%;
     }
 
-    .navlist {
-        position: absolute;
-        top: 0;
-        right: -100%;
-        width: 270px;
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 150px 30px;
-        gap: 50px;
-        background-color: #0A8080;
-        transition: all .4s ease;
+    .line img {
+        right: 2%;
     }
 
-    .other{
-        display: none;
+    .navlist a{
+        margin: 15px;
     }
 
-    li .active{
-        color: #e6d8cc;
+    .advertise{
+        text-align: center;
     }
 
-    .navlist a {
-        top: 100px;
+    .subscribe{
+        margin-top: 110%;
+        padding: 5% 0%;
     }
 
-    .navlist a:hover {
-        color: var(--bg-color);
+
+}
+
+@media screen and (max-width : 900px) and (min-width : 770px){
+
+    header{
+        padding: 20px 2%;
     }
 
-    .btn a {
-        display: none;
+    .line img {
+        right: 2%;
     }
 
-    .open {
-        right: 0;
+    .navlist a{
+        margin: 15px;
     }
 
+    .advertise{
+        text-align: center;
+    }   
+
+    .subscribe{
+        margin-top: 80%;
+        padding: 5% 0%;
+    }
     
-
-
-
-
 
 }
 
@@ -527,13 +526,18 @@ footer{
         display: none;
     }
 
+
+    #menu {
+        display: block;
+        cursor: pointer;
+        color: #0F2137;
+    }
+
     header{
         background-color: #E6D8CC;
         box-shadow: none;
     }
-    #menu{
-        color: #0F2137;
-    }
+   
     .navlist {
         position: absolute;
         top: 0;
@@ -553,6 +557,27 @@ footer{
     }
 
     .logo{
+        display: none;
+    }
+
+    
+    .other{
+        display: none;
+    }
+
+    li .active{
+        color: #e6d8cc;
+    }
+
+    .navlist a {
+        top: 100px;
+    }
+
+    .navlist a:hover {
+        color: var(--bg-color);
+    }
+
+    .btn a {
         display: none;
     }
 
