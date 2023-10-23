@@ -39,6 +39,7 @@ function validateForm() {
     //username
     if(username.value.trim()==''){
         setError(username,"name can't be empty");
+        console.log("name can't be empty");
     }
     else if(username.value.trim().length < 5 || username.value.trim().length > 15 ){
         setError(username,"name must be max than 5 and less than 15");
@@ -50,6 +51,7 @@ function validateForm() {
     //email
     if(email.value.trim()==''){
         setError(email,"email can't be empty");
+        console.log("email can't be empty");
     }
     else if(isEmailValid(email.value)){
         setSuccess(email);
@@ -61,6 +63,7 @@ function validateForm() {
     //password
     if(pass.value.trim()==''){
         setError(pass,"password can't be empty");
+        console.log("password can't be empty");
     }
     else if(pass.value.trim().length < 6 || pass.value.trim().length > 25 ){
         setError(pass,"name must be max than 5 and less than 15");
@@ -69,10 +72,11 @@ function validateForm() {
         setSuccess(pass);
     }
 
-    //co-password
+    // //co-password
 
     if(co_pass.value.trim()==''){
         setError(co_pass,"can't be empty");
+        console.log("confirm password can't be empty");
     }
     else if(co_pass.value !== pass.value){
         setError(co_pass,"confirm password not equal the password");
@@ -82,15 +86,14 @@ function validateForm() {
     }
 }
 
-function setError(element , errorMessage){
+function setError(element){
 
     const parent = element.parentElement;
     if(parent.classList.contains('success')){
         parent.classList.remove('success');
     }
     parent.classList.add('error');
-    const para = document.querySelector('p');
-    para.textContent = errorMessage;
+
 
 }
 

@@ -151,79 +151,79 @@ header {
     color: black;
 }
 
-form{
+form {
     margin-top: 50px;
 }
 
 .form {
-    margin:20px 0; 
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
 }
 
 
 .form input {
-    display:block;
-    width:120%;
-    padding:15px;
+    display: block;
+    width: 120%;
+    padding: 15px;
     border-radius: 15px;
     border: none;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .error input {
-    border:3px red solid;
+    border: 3px red solid;
 }
 
 .success input {
-    border:3px green solid;
+    border: 3px green solid;
 }
 
- .form i {
+.form i {
     font-size: 20px;
-     position:absolute;
-     right:5px;
-     top:15px;
-     visibility: hidden;
- }
-
-
- .success i.bxs-check-circle{
-     visibility: visible;
-     color:green;
- }
-
- .error i.bxs-info-circle {
-    visibility: visible;
-    color:red;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    visibility: hidden;
 }
 
 
- .form p {
-     font-size: 15px;
-     color:red;
-     visibility: hidden;
-     float: left;
-     width: 110%;
- }
+.success i.bxs-check-circle {
+    visibility: visible;
+    color: green;
+}
 
- .error p {
-     visibility: visible;
- }
+.error i.bxs-info-circle {
+    visibility: visible;
+    color: red;
+}
 
- .sub {
-     width:100%;
-     padding:15px;
-     font-size: 15px;
-     background-color: #02073E;
-     color:#fff;
-     font-weight: bold;
-     border:none;
-     border-radius: 20px;
- }
+
+.form p {
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+    float: left;
+    width: 110%;
+}
+
+.error p {
+    visibility: visible;
+}
+
+.sub {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #02073E;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
 
 form a {
     background-color: white;
@@ -248,7 +248,7 @@ form a span {
     font-weight: bold;
 }
 
-form .err{
+form .err {
     font-size: 12px;
     color: red;
     text-align: start;
@@ -256,6 +256,7 @@ form .err{
     visibility: hidden;
 
 }
+
 .error .err {
     visibility: visible;
 }
@@ -277,7 +278,7 @@ form .err{
     color: rgb(0, 102, 255);
 }
 
-.mob{
+.mob {
     display: none;
 }
 
@@ -288,11 +289,11 @@ form .err{
         background-color: #e6d8cc;
     }
 
-    .main{
+    .main {
         display: none;
     }
 
-    .mob{
+    .mob {
         display: block;
     }
 

@@ -61,15 +61,14 @@ const validateForm = () => {
 
 }
 
-function setError(element , errorMessage){
+function setError(element){
 
     const parent = element.parentElement;
     if(parent.classList.contains('success')){
         parent.classList.remove('success');
     }
     parent.classList.add('error');
-    const para = document.querySelector('p');
-    para.textContent = errorMessage;
+
 
 }
 
