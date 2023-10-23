@@ -173,8 +173,20 @@ header {
 }
 
 .btn2 {
-    color: #0A8080;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2{
+    color: black;
+}
+
+.btn2 img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 20px;
 }
 
 .line img {
@@ -185,7 +197,7 @@ header {
 #menu {
     font-size: 30px;
     display: none;
-    z-index: 10001;
+    z-index: 100001;
 }
 
 .home {
@@ -592,17 +604,183 @@ footer {
     display: none;
 }
 
-@media screen and (max-width : 1330px) {
+@media screen and (max-width : 770px) {
+
+    header {
+        padding: 20px 2%;
+    }
+
+    .line img {
+        right: 2%;
+    }
+
+    .navlist a {
+        margin: 15px;
+    }
+
+    .home {
+        padding: 15% 0%;
+
+    }
+
+    .cards {
+
+        top: 60%;
+        padding: 8% 2%;
+        height: auto;
+    }
+
+    .row {
+        margin-top: 8%;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .quot p {
+        width: 60%;
+        top: 60%;
+        right: 20%;
+    }
+
+    .quot .p2 {
+        top: 73%;
+    }
+
+    .quot img {
+        right: 30%;
+    }
+
+    .team {
+        margin-top: 60%;
+    }
+
+
+    .col__blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10%;
+    }
+
+    .subscribe {
+        margin-top: 180%;
+        padding: 10% 0%;
+    }
+
+    .det {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        background-color: white;
+        width: 100%;
+
+    }
+
+    .det form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width : 900px) and (min-width : 770px) {
+
+    header {
+        padding: 20px 2%;
+    }
+
+    .line img {
+        right: 2%;
+    }
+
+    .navlist a {
+        margin: 15px;
+    }
+
+    .home {
+        padding: 15% 0%;
+
+    }
+
+    .cards {
+
+        top: 55%;
+        padding: 8% 2%;
+        height: auto;
+    }
+
+    .row {
+        margin-top: 8%;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .quot p {
+        width: 60%;
+        top: 60%;
+        right: 20%;
+    }
+
+    .quot .p2 {
+        top: 73%;
+    }
+
+    .quot img {
+        right: 30%;
+    }
+
+    .team {
+        margin-top: 50%;
+    }
+
+    .col__blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10%;
+    }
+
+    .subscribe {
+        margin-top: 150%;
+        padding: 10% 0%;
+    }
+
+    .det {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        background-color: white;
+        width: 100%;
+
+    }
+
+
+}
+
+@media screen and (max-width : 467px) {
+
+
+
+    .main {
+        display: none;
+    }
+
 
     #menu {
         display: block;
         cursor: pointer;
+        color: #0F2137;
+    }
+
+    header {
+        background-color: #E6D8CC;
+        box-shadow: none;
     }
 
     .navlist {
         position: absolute;
         top: 0;
-        right: -100%;
+        left: -100%;
         width: 270px;
         height: 120vh;
         display: flex;
@@ -614,11 +792,20 @@ footer {
         transition: all .4s ease;
     }
 
-    .other{
+    .open {
+        left: 0;
+    }
+
+    .logo {
         display: none;
     }
 
-    li .active{
+
+    .other {
+        display: none;
+    }
+
+    li .active {
         color: #e6d8cc;
     }
 
@@ -634,120 +821,7 @@ footer {
         display: none;
     }
 
-    .open {
-        right: 0;
-    }
-
-    .home {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 5% 5%;
-    }
-
-    .social {
-        -webkit-transform: none;
-        margin-top: 100px;
-    }
-
-    .text h1 {
-        font-size: 30px;
-    }
-
-    .text h1 span {
-        font-size: 40px;
-    }
-
-    .btns {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .more i {
-        display: none;
-    }
-
-    .img img {
-        width: 40%;
-        height: auto;
-    }
-
-    .quot {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-    }
-
-    .quot p{
-        font-size: 15px;
-        top: 62%;
-    }
-
-    .quot .p2{
-        top: 73%;
-    }
-
-    .subscribe {
-
-        margin-top: 120%;
-        padding: 6% 0px;
-     
-    }
-
-    .det {
-        width: 80%;
-        padding: 2.5%;
-    }
-
-
-
-
-
-}
-
-@media screen and (max-width : 467px) {
-
-
-
-
-    .main {
-        display: none;
-    }
-
-    header{
-        background-color: #E6D8CC;
-    }
-    #menu{
-        color: #0F2137;
-    }
-    .navlist {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 270px;
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 150px 30px;
-        gap: 50px;
-        background-color: #0A8080;
-        transition: all .4s ease;
-    }
-    .open {
-        left: 0;
-    }
-
-    .logo{
-        display: none;
-    }
-
-    .mob{
+    .mob {
         display: block;
         padding: 25% 5%;
         width: 100%;
@@ -758,7 +832,7 @@ footer {
         gap: 20px;
     }
 
-    form input{
+    form input {
         width: 300px;
         background-color: white;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
@@ -767,7 +841,7 @@ footer {
 
     }
 
-    .h-img{
+    .h-img {
         width: 280px;
         height: 170px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
@@ -776,12 +850,13 @@ footer {
         margin-left: 38px;
     }
 
-    .row-mob{
+    .row-mob {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .title h1{
+
+    .title h1 {
         display: inline-flex;
         justify-content: start;
         align-items: start;
@@ -789,25 +864,27 @@ footer {
         font-size: 20px;
         color: #0F2137;
     }
-    .line-t{
+
+    .line-t {
         width: 50px;
         background-color: #0F2137;
         height: 7px;
         border-radius: 50px;
     }
-    .view a{
+
+    .view a {
         color: grey;
         font-size: 12px;
     }
 
-    .rows-mob{
+    .rows-mob {
         margin-top: 8%;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    .rows-1-mob{
+    .rows-1-mob {
         background-color: #DCDCDC;
         border-radius: 25px;
         display: flex;
@@ -817,23 +894,23 @@ footer {
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .rows-1-mob img{
+    .rows-1-mob img {
         width: 60px;
         height: 60px;
     }
 
-    .details-mob h1{
+    .details-mob h1 {
         font-size: 15px;
     }
 
-    .details-mob p{
+    .details-mob p {
         color: black;
         font-size: 15px;
     }
 
-    
 
-    .col-team{
+
+    .col-team {
         background-color: #EFE2DA;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
         display: flex;
@@ -845,18 +922,18 @@ footer {
         height: 250px;
     }
 
-    .img-team img{
+    .img-team img {
         width: 120px;
         height: auto;
         position: relative;
     }
 
-    .name-team h1{
+    .name-team h1 {
         color: #0F2137;
         font-size: 15px;
     }
 
-    .name-team p{
+    .name-team p {
         color: black;
         font-size: 10px;
     }

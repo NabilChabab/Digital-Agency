@@ -124,8 +124,8 @@ li .active{
 }
 
 .about{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
     align-items: center;
     padding: 8% 14%;
     text-align: start;
@@ -177,8 +177,9 @@ li .active{
 .faq-container {
     width: 100%;
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+    padding: 0px 65rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(1000px , 1fr));
     justify-content: center;
     align-items: center;
     text-align: left;
@@ -331,57 +332,47 @@ footer{
     display: none;
 }
 
-@media screen and (max-width : 1330px) {
+@media screen and (max-width : 770px){
 
-    #menu {
-        display: block;
-        cursor: pointer;
+    header{
+        padding: 20px 2%;
     }
 
-    .navlist {
-        position: absolute;
-        top: 0;
-        right: -100%;
-        width: 270px;
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 150px 30px;
-        gap: 50px;
-        background-color: #0A8080;
-        transition: all .4s ease;
+    .line img {
+        right: 2%;
     }
 
-    .other{
-        display: none;
+    .navlist a{
+        margin: 15px;
     }
 
-    li .active{
-        color: #e6d8cc;
-    }
-
-    .navlist a {
-        top: 100px;
-    }
-
-    .navlist a:hover {
-        color: var(--bg-color);
-    }
-
-    .btn a {
-        display: none;
-    }
-
-    .open {
-        right: 0;
+    .support{
+        text-align: center;
     }
 
     
 
 
+}
 
+@media screen and (max-width : 900px) and (min-width : 770px){
 
+    header{
+        padding: 20px 2%;
+    }
+
+    .line img {
+        right: 2%;
+    }
+
+    .navlist a{
+        margin: 15px;
+    }
+
+    .support{
+        text-align: center;
+    }   
+    
 
 }
 
