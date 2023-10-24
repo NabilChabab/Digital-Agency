@@ -19,10 +19,33 @@
 }
 
 :root {
-    --bg-color: #FFFFFF;
-    --text-color: black;
-    --second-color: #5a7184;
-    --main-color: #6e54fa;
+    --bg-color:  #0F2137;
+    --text-color: #ffffff;
+    --second-color: #0A8080;
+    --main-color: #0F2137;
+    --main-color2: #0F2137;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+/* :root{
+    --bg-color:  #0F2137;
+    --text-color: #ffffff;
+    --second-color: #0A8080;
+    --main-color: #0F2137;
+    --main-color2: #0F2137;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+} */
+
+.dark-theme{
+    --bg-color: #ffffff;
+    --text-color: #0F2137;
+    --second-color: #0A8080;
+    --main-color: #e6d8cc;
+    --main-color2: #FFF5ED;
     --big-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -31,70 +54,6 @@
 body {
     background: var(--bg-color);
     color: var(--text-color);
-}
-
-.popup {
-    position: fixed;
-    z-index: 10001;
-    top: 50%;
-    left: 50%;
-    visibility: hidden;
-    transform: translate(-50%, -50%) scale(0.2);
-    transition: all .5s ease-in;
-}
-
-.box {
-    background-color: #e6d8cc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    width: 600px;
-    height: 400px;
-    gap: 3rem;
-}
-
-.transis {
-    transform: translate(-50%, -50%) scale(1);
-    visibility: visible;
-}
-
-.trnsis_remove {
-    transform: translate(-50%, -50%) scale(0);
-    transition: all .5s ease-in-out;
-}
-
-.img_box img {
-    width: 150%;
-    height: auto;
-}
-
-.content h2 {
-    color: green;
-}
-
-.content p {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    color: black;
-}
-
-.content a {
-    color: white;
-    background-color: #0F2137;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.remove i {
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    background-color: white;
-    border-radius: 50%;
-    font-size: 30px;
-    cursor: pointer;
 }
 
 
@@ -115,7 +74,7 @@ header {
 
 .logo {
     display: flex;
-    color: black;
+    color: var(--text-color);
     font-size: 20px;
 }
 
@@ -127,19 +86,19 @@ header {
 
 .navlist a {
     position: relative;
-    color: black;
+    color: var(--text-color);
     margin: 0 20px;
     letter-spacing: 2px;
     transition: all .4s ease;
 }
 
 .navlist a:hover {
-    color: #0A8080;
+    color: var(--second-color);
 }
 
 .navlist a::after {
     position: absolute;
-    background-color: #0A8080;
+    background-color: var(--second-color);
     content: '';
     left: 0;
     bottom: 0;
@@ -162,14 +121,14 @@ header {
 }
 
 .btn {
-    color: black;
+    color: var(--text-color);
     letter-spacing: 2px;
     margin-right: 20px;
     transition: all .4s ease;
 }
 
 .btn:hover {
-    color: #0A8080;
+    color: var(--second-color);
 }
 
 .btn2 {
@@ -179,7 +138,7 @@ header {
 }
 
 .btn2{
-    color: black;
+    color: var(--text-color);
 }
 
 .other{
@@ -190,7 +149,13 @@ header {
 }
 
 .other a:last-child {
-    color: #0A8080;
+    color: var(--second-color);
+}
+
+#moon{
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .line img {
@@ -214,18 +179,18 @@ header {
 }
 
 .title-sec h1 {
-    color: black;
+    color: var(--text-color);
     font-size: 30px;
 }
 
 .title-sec p {
-    color: black;
+    color: var(--text-color);
     margin: 15px;
 }
 
 .getbtn {
-    background-color: #0A8080;
-    color: white;
+    background-color: var(--second-color);
+    color: var(--bg-color);
     letter-spacing: 1px;
     padding: 12px 22px;
     margin-top: 15px;
@@ -245,7 +210,7 @@ header {
 .cards {
     width: 100%;
     height: 100%;
-    background-color: #FFF5ED;
+    background-color: var(--main-color2);
     position: absolute;
     top: 80%;
     padding: 8% 14%;
@@ -257,7 +222,7 @@ header {
 
 .cards p {
     font-size: 10px;
-    color: black;
+    color: var(--text-color);
     margin-top: 15px;
 }
 
@@ -283,7 +248,7 @@ header {
 .details h1 {
     font-size: 20px;
     font-weight: 500;
-    color: rgb(34, 34, 34);
+    color: var(--text-color);
     margin-left: 20px;
 }
 
@@ -317,7 +282,7 @@ header {
 }
 
 .quot .p2 {
-    color: black;
+    color: var(--text-color);
     bottom: 30%;
     font-size: 10px;
 }
@@ -348,7 +313,7 @@ header {
 }
 
 li .active {
-    color: #0A8080;
+    color: var(--second-color);
 }
 
 
@@ -381,8 +346,8 @@ li .active {
 }
 
 .arrow1 i{
-    background-color: black;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--bg-color);
     font-size: 40px;
     border-radius: 50%;
     position: absolute;
@@ -393,12 +358,12 @@ li .active {
 }
 
 .arrow2 i{
-    background-color: black;
+    background-color: var(--text-color);
     position: absolute;
     right: 14%;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.356);
     top: 220%;
-    color: white;
+    color: var(--bg-color);
     font-size: 40px;
     z-index: 10001;
     border-radius: 50%;
@@ -406,7 +371,7 @@ li .active {
 
 
 .col img {
-    background-color: #FFFAF6;
+    background-color: var(--main-color2);
     padding: 25px 25px 0 25px;
     align-items: center;
 }
@@ -428,13 +393,13 @@ li .active {
 
 .details-col p {
     font-size: small;
-    color: black;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: black;
+    color: var(--text-color);
 
 }
 
@@ -444,7 +409,7 @@ li .active {
 }
 
 .icons a i {
-    color: #0A8080;
+    color: var(--second-color);
     font-size: medium;
 }
 
@@ -481,7 +446,7 @@ li .active {
 }
 
 .col-blog .txt {
-    background-color: #FFF5ED;
+    background-color: var(--main-color2);
     padding: 30px;
     margin-bottom: 20px;
     width: 90%;
@@ -501,7 +466,7 @@ li .active {
 .col-blog .image .txt1 {
     position: absolute;
     bottom: -232%;
-    color: white;
+    color: var(--bg-color);
     margin: 10px 0 50px 10px;
     width: 18%;
     font-size: small;
@@ -510,7 +475,7 @@ li .active {
 .col-blog .image .txt2 {
     position: absolute;
     bottom: -256%;
-    color: white;
+    color: var(--bg-color);
     margin: 10px 0 50px 10px;
     width: 18%;
     font-size: small;
@@ -536,7 +501,7 @@ li .active {
     align-items: center;
     text-align: start;
     gap: 3rem;
-    background-color: white;
+    background-color: var(--bg-color);
     width: 60%;
     padding: 2.5%;
 }
@@ -547,7 +512,7 @@ li .active {
 
 .titles p {
     font-size: 10px;
-    color: black;
+    color: var(--text-color);
     width: 70%;
     margin-top: 10px;
 }
@@ -559,11 +524,11 @@ form input {
     padding: 15px 30px;
     width: 65%;
     border-radius: 10px;
-    color: black;
+    color: var(--text-color);
 }
 
 .txt3 p {
-    color: black;
+    color: var(--text-color);
     font-size: 8px;
     margin-top: 10px;
     margin-left: 2px;
@@ -571,7 +536,7 @@ form input {
 
 form a {
     background-color: #810539;
-    color: white;
+    color: var(--bg-color);
     padding: 10px 20px;
     margin-left: 10px;
 }
@@ -605,7 +570,7 @@ footer {
 }
 
 .copy p {
-    color: black;
+    color: var(--text-color);
     font-size: small;
 }
 
@@ -617,7 +582,7 @@ footer {
 }
 
 .det-foot a {
-    color: black;
+    color: var(--text-color);
     margin-bottom: 10px;
     display: inline-flex;
 }
@@ -708,7 +673,7 @@ footer {
     .det {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        background-color: white;
+        background-color: var(--bg-color);
         width: 100%;
 
     }
@@ -788,7 +753,7 @@ footer {
     .det {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        background-color: white;
+        background-color: var(--bg-color);
         width: 100%;
 
     }
@@ -873,7 +838,7 @@ footer {
 
     form input {
         width: 300px;
-        background-color: white;
+        background-color: var(--bg-color);
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
         border-radius: 18px;
         margin-left: 30px;
@@ -943,7 +908,7 @@ footer {
     }
 
     .details-mob p {
-        color: black;
+        color: var(--text-color);
         font-size: 15px;
     }
 
@@ -973,7 +938,7 @@ footer {
     }
 
     .name-team p {
-        color: black;
+        color: var(--text-color);
         font-size: 10px;
     }
 

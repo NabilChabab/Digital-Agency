@@ -3,12 +3,7 @@ const username = document.querySelector("#name");
 const email = document.querySelector("#email");
 const pass = document.querySelector("#password");
 const co_pass = document.querySelector("#confirm");
-
-
-
-
-
-
+const msg1 = document.querySelector(".err-msg");
 
 
 form.addEventListener('submit' , (event) =>{
@@ -39,11 +34,10 @@ function isFormValid(){
 function validateForm() {
     //username
     if(username.value.trim()==''){
-        setError(username,"name can't be empty");
-        console.log("name can't be empty");
+        setError(username);
     }
     else if(username.value.trim().length < 5 || username.value.trim().length > 15 ){
-        setError(username,"name must be max than 5 and less than 15");
+        setError(username);
     }
     else{
         setSuccess(username);
@@ -52,23 +46,21 @@ function validateForm() {
 
     //email
     if(email.value.trim()==''){
-        setError(email,"email can't be empty");
-        console.log("email can't be empty");
+        setError(email);
     }
     else if(isEmailValid(email.value)){
         setSuccess(email);
     }
     else{
-        setError(email,"choose a valid email");
+        setError(email);
     }
 
     //password
     if(pass.value.trim()==''){
-        setError(pass,"password can't be empty");
-        console.log("password can't be empty");
+        setError(pass);
     }
     else if(pass.value.trim().length < 6 || pass.value.trim().length > 25 ){
-        setError(pass,"name must be max than 5 and less than 15");
+        setError(pass);
     }
     else{
         setSuccess(pass);
@@ -77,11 +69,10 @@ function validateForm() {
     // //co-password
 
     if(co_pass.value.trim()==''){
-        setError(co_pass,"can't be empty");
-        console.log("confirm password can't be empty");
+        setError(co_pass);
     }
     else if(co_pass.value !== pass.value){
-        setError(co_pass,"confirm password not equal the password");
+        setError(co_pass);
     }
     else{
         setSuccess(co_pass);
@@ -111,6 +102,7 @@ function isEmailValid(email){
     const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     return reg.test(email);
 }
+
 
 
 function save(){
