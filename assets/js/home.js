@@ -48,3 +48,7 @@ const swiper = new Swiper('.swiper', {
 
     
   });
+
+
+  const name = document.querySelector(".btn2");
+  name.innerHTML = localStorage.getItem("data");

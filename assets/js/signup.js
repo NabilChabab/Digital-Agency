@@ -16,6 +16,7 @@ form.addEventListener('submit' , (event) =>{
     validateForm();
     if(isFormValid() == true){
         form.submit();
+        
     }
     else{
         event.preventDefault();
@@ -46,6 +47,7 @@ function validateForm() {
     }
     else{
         setSuccess(username);
+        save();
     }
 
     //email
@@ -110,6 +112,10 @@ function isEmailValid(email){
     return reg.test(email);
 }
 
+
+function save(){
+    localStorage.setItem("data",username.value);
+}
 
 
 

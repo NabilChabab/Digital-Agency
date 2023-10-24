@@ -40,7 +40,7 @@ const validateForm = () => {
     if(email.value.trim()==''){
         setError(email,"email can't be empty");
     }
-    else if(isEmailValid(email.value) && email.value == "nabil.chabab@gmail.com"){
+    else if(isEmailValid(email.value)){
         setSuccess(email);
     }
     else{
@@ -54,7 +54,7 @@ const validateForm = () => {
     else if(pass.value.trim().length < 6 || pass.value.trim().length > 25 ){
         setError(pass,"name must be max than 5 and less than 15");
     }
-    else if(pass.value == "12345678"){
+    else{
         setSuccess(pass);
     }
 
@@ -84,6 +84,7 @@ function isEmailValid(email){
     const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     return reg.test(email);
 }
+
 
 
 
