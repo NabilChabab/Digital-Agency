@@ -7,48 +7,24 @@ menu.onclick = () => {
     navbar.classList.toggle('open');
 }
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-    slidesPerView : 2,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-        500: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 50,
-        },
-      },
-
-    
-  });
 
 
   const name = document.querySelector(".btn2");
   name.innerHTML = localStorage.getItem("data");
+
+
+  const slider = () =>{
+    const arrows = document.querySelectorAll(".slider .arr");
+    const cards = document.querySelector(".slider .container");
+
+    arrows.forEach(btn => {
+      btn.addEventListener('click' , ()=>{
+        console.log(btn);
+        const direct = btn.id === "back" ? -0.5 : 0.5;
+        const scroll =  cards.clientWidth * direct;
+        cards.scrollBy({left : scroll , behavior : "smooth"})
+      });
+    });
+  }
+
+  window.addEventListener('load' , slider);

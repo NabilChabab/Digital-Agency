@@ -363,13 +363,46 @@ li .active {
 }
 
 
+
+
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(8 , 1fr);
+    gap: 5rem;
+    position: relative;
     margin-top: 80px;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.arrow1 i{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.356);
+    z-index: 10001;
+    left: 11%;
+    top: 220%;
+}
+
+.arrow2 i{
+    background-color: black;
+    position: absolute;
+    right: 14%;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.356);
+    top: 220%;
+    color: white;
+    font-size: 40px;
+    z-index: 10001;
+    border-radius: 50%;
+}
 
 
 .col img {
