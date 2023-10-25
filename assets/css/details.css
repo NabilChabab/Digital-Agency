@@ -19,14 +19,26 @@
 	font-display: swap;
   }
   
-:root{
-	--bg-color: #FFFFFF;
-	--text-color: black;
-	--second-color: #5a7184;
-	--main-color: #6e54fa;
-	--big-font: 6rem;
-	--h2-font: 3rem;
-	--p-font: 1.1rem;
+  :root {
+    --bg-color: #0F2137;
+    --text-color: #ffffff;
+    --second-color: #0A8080;
+    --main-color: #0F2137;
+    --main-color2: #0F2137;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+.dark-theme {
+    --bg-color: #ffffff;
+    --text-color: #0F2137;
+    --second-color: #0A8080;
+    --main-color: #e6d8cc;
+    --main-color2: #FFF5ED;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
 }
 body{
 	background: var(--bg-color);
@@ -53,7 +65,7 @@ header{
 
 .logo{
     display: flex;
-    color: black;
+    color: var(--text-color);
     font-size: 20px;
 }
 
@@ -65,19 +77,20 @@ header{
 
 .navlist a{
     position: relative;
-    color: black;
+    color: text;
     margin: 0 20px;
     letter-spacing: 2px;
     transition: all .4s ease;
+    color: var(--text-color);
 }
 
 .navlist a:hover{
-    color: #0A8080;
+    color: var(--second-color);
 }
 
 .navlist a::after{
     position: absolute;
-    background-color: #0A8080;
+    background-color: var(--second-color);
     content: '';
     left: 0;
     bottom: 0;
@@ -99,14 +112,30 @@ header{
 }
 
 .btn{
-    color: black;
+    color: text;
     letter-spacing: 2px;
     margin-right: 20px;
 }
 
-.btn2{
-    color: #0A8080;
-    position: relative;
+.btn2 {
+    color: var(--text-color);
+}
+
+.other {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.other a:last-child {
+    color: var(--second-color);
+}
+
+#moon {
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .line img{
@@ -121,23 +150,23 @@ header{
     align-items: center;
     padding: 8% 14%;
     text-align: center;
-    background-color: rgb(245, 236, 220);
+    background-color: var(--main-color);
     width: 100%;
     height: 100vh;
 }
 
 .title-sec h1{
-    color: black;
+    color: text;
     font-size: 30px;
 }
 
 .title-sec p{
-    color: black;
+    color: text;
     margin: 15px;
 }
 
 .getbtn{
-    background-color: #0A8080;
+    background-color: var(--second-color);
     color: white;
     letter-spacing: 1px;
     padding: 12px 22px;
@@ -247,7 +276,7 @@ header{
     align-items: center;
     text-align: start;
     gap: 3rem;
-    background-color: white;
+    background-color: var(--bg-color);
     width: 60%;
     padding: 2.5%;
 }
@@ -257,7 +286,7 @@ header{
 }
 .titles p{
     font-size: 10px;
-    color: black;
+    color: text;
     width: 70%;
     margin-top: 10px;
 }
@@ -269,10 +298,10 @@ form input{
     padding: 15px 30px;
     width: 65%;
     border-radius: 10px;
-    color: black;
+    color: text;
 }
 .txt3 p{
-    color: black;
+    color: text;
     font-size: 8px;
     margin-top: 10px;
     margin-left: 2px;
@@ -280,7 +309,7 @@ form input{
 
 form a{
     background-color: #DB4A87;
-    color: white;
+    color: var(--bg-color);
     padding: 10px 20px;
     margin-left: 10px;
 }
@@ -315,7 +344,7 @@ footer{
 }
 
 .copy p{
-    color: black;
+    color: text;
     font-size: small;
 }
 
@@ -327,7 +356,7 @@ footer{
 }
 
 .det-foot a{
-    color: black;
+    color: text;
     margin-bottom: 10px;
     display: inline-flex;
 }
@@ -343,7 +372,7 @@ footer{
 
 @media screen and (max-width : 500px) {
     header {
-        background-color: #0A8080;
+        background-color: var(--second-color);
         bottom: -2%;
         position: fixed;
         display: flex;
@@ -371,13 +400,13 @@ footer{
     }
 
     .navlist span {
-        color: white;
+        color: var(--bg-color);
         display: none;
     }
 
     .navlist i {
         display: block;
-        color: white;
+        color: var(--bg-color);
         font-size: 25px;
         margin-left: 10px;
     }
@@ -459,7 +488,7 @@ footer{
     
     .details1 p{
         line-height: 25px;
-        color: black;
+        color: text;
         text-align: center;
     }
 
@@ -483,7 +512,7 @@ footer{
         align-items: center;
         text-align: center;
         gap: 3rem;
-        background-color: white;
+        background-color: var(--bg-color);
         width: 100%;
         padding: 2.5%;
     }
@@ -494,7 +523,7 @@ footer{
 
     .titles p {
         font-size: 10px;
-        color: black;
+        color: text;
         width: 100%;
         margin-top: 10px;
         text-align: center;
@@ -507,12 +536,12 @@ footer{
         padding: 15px 30px;
         width: 100%;
         border-radius: 10px;
-        color: black;
+        color: text;
         margin-bottom: 20px;
     }
 
     .txt3 p {
-        color: black;
+        color: text;
         font-size: 8px;
         margin-top: 10px;
         margin-left: 2px;
@@ -614,7 +643,7 @@ footer{
     }
     
     .col-1 p{
-        color: black;
+        color: text;
 
         margin-top: 20px;
         font-size: 12px;
@@ -636,7 +665,7 @@ footer{
     }
     
     .check-1 a {
-        color: black;
+        color: text;
         font-size: small;
     }
     
@@ -654,7 +683,7 @@ footer{
     }
     
     .check-2 a {
-        color: black;
+        color: text;
         font-size: small;
     }
     
@@ -697,12 +726,12 @@ footer{
     
     .detailss p{
         font-size: 25px;
-        color: black;
+        color: text;
         margin-bottom: 50px;
     }
     
     .detailss .p1{
-        color: black;
+        color: text;
         font-size: 11px;
         
     }
