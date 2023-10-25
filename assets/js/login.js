@@ -34,19 +34,24 @@ function isFormValid(){
 }
 
 const validateForm = () => {
- 
 
+    const namedata = localStorage.getItem("data");
+    const emaildata = localStorage.getItem("dataemail");
+    const passdata = localStorage.getItem("datapass");
+    console.log(namedata);
+    console.log(emaildata);
+    console.log(passdata);
     //email
     if(email.value.trim()==''){
         setError(email);
         email.nextElementSibling.textContent = "email can't be empty";
     }
-    else if(isEmailValid(email.value)){
-        setSuccess(email);
+    else if(email.value !== emaildata){
+        setError(email);
+        email.nextElementSibling.textContent = "email not found";
     }
     else{
-        setError(email);
-        email.nextElementSibling.textContent = "entre a valid email";
+        setSuccess(email);
     }
 
     //password
@@ -57,6 +62,10 @@ const validateForm = () => {
     else if(pass.value.trim().length < 6 || pass.value.trim().length > 25 ){
         setError(pass);
         pass.nextElementSibling.textContent = "password can't be less than 6 characters";
+    }
+    else if(pass.value !== passdata){
+        setError(pass);
+        pass.nextElementSibling.textContent = "password not correct";
     }
     else{
         setSuccess(pass);

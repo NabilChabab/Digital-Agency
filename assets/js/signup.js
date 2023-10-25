@@ -53,6 +53,7 @@ function validateForm() {
     }
     else if(isEmailValid(email.value)){
         setSuccess(email);
+        saveEmail();
     }
     else{
         setError(email);
@@ -70,6 +71,7 @@ function validateForm() {
     }
     else{
         setSuccess(pass);
+        savePass();
     }
 
     // //co-password
@@ -117,6 +119,14 @@ function isEmailValid(email){
 
 function save(){
     localStorage.setItem("data",username.value);
+}
+
+function saveEmail(){
+    localStorage.setItem("dataemail" , email.value);
+}
+
+function savePass(){
+    localStorage.setItem("datapass" , pass.value);
 }
 
 
