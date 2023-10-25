@@ -22,7 +22,7 @@
   :root {
     --bg-color:  #0F2137;
     --text-color: #ffffff;
-    --second-color: var(--second-color);
+    --second-color: #0A8080;
     --main-color: #0F2137;
     --main-color2: #0F2137;
     --big-font: 6rem;
@@ -34,7 +34,7 @@
 .dark-theme{
     --bg-color: #ffffff;
     --text-color: #0F2137;
-    --second-color: var(--second-color);
+    --second-color: #0A8080;
     --main-color: #e6d8cc;
     --main-color2: var(--main-color);
     --big-font: 6rem;
@@ -89,7 +89,7 @@ header{
     color: var(--second-color);
 }
 
-li.active{
+li .active{
     color: var(--second-color);
 }
 

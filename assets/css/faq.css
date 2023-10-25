@@ -35,16 +35,15 @@ body{
 
 
 
-header{
+header {
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     padding: 20px 14%;
     background-color: var(--bg-color);
     transition: all .4s ease;
     z-index: 1000;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .navlist{
@@ -114,7 +113,7 @@ li .active{
 
 .line img{
     position: absolute;
-    right: 14%;
+    right: 26%;
 }
 
 #menu {

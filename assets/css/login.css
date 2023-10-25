@@ -34,13 +34,12 @@ body {
 }
 
 
-
 header {
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    padding: 25px 14%;
+    padding: 20px 14%;
     background-color: var(--bg-color);
     transition: all .4s ease;
     z-index: 1000;
@@ -109,7 +108,7 @@ header {
 
 .line img {
     position: absolute;
-    right: 14%;
+    right: 26%;
 }
 
 .row {
