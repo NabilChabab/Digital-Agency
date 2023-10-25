@@ -47,6 +47,9 @@ body{
 	color: var(--text-color);
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
 
 
 header{
@@ -159,6 +162,7 @@ li .active{
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
     justify-content: center;
+    gap: 20rem;
     align-items: center;
     padding: 8% 14%;
     text-align: start;
@@ -196,7 +200,7 @@ li .active{
 }
 
 .adver-img img{
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -515,6 +519,7 @@ footer{
 
     .advertise{
         text-align: center;
+        gap: 0;
     }
 
     .subscribe{
@@ -545,6 +550,7 @@ footer{
 
     .advertise{
         text-align: center;
+        gap: 0;
     }   
 
     .subscribe{

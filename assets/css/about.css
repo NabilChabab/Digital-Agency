@@ -45,6 +45,12 @@
 body{
 	background: var(--bg-color);
 	color: var(--text-color);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 
@@ -157,7 +163,7 @@ li .active{
 .about{
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 8% 14%;
     text-align: start;
