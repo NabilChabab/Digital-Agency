@@ -241,6 +241,7 @@ li .active{
     justify-content: center;
     align-items: center;
     width: 180%;
+    margin-left: 20%;
 }
 
 .txts h1{
@@ -249,12 +250,18 @@ li .active{
     margin-bottom: 15px;
     width: 100%;
     text-align: center;
+    cursor: pointer;
+}
+
+.activequest{
+    color: var(--second-color);
 }
 
 .line1{
     width: 100%;
     height: 3px;
     background-color: #A17857;
+    display: none;
 }
 
 .rows-why{
