@@ -19,7 +19,7 @@
 }
 
 :root {
-    --bg-color:  #0F2137;
+    --bg-color: #0F2137;
     --text-color: #ffffff;
     --second-color: #0A8080;
     --main-color: #0F2137;
@@ -40,7 +40,7 @@
     --p-font: 1.1rem;
 } */
 
-.dark-theme{
+.dark-theme {
     --bg-color: #ffffff;
     --text-color: #0F2137;
     --second-color: #0A8080;
@@ -56,7 +56,7 @@ body {
     color: var(--text-color);
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -141,11 +141,11 @@ header {
     justify-content: center;
 }
 
-.btn2{
+.btn2 {
     color: var(--text-color);
 }
 
-.other{
+.other {
     display: flex;
     gap: 2rem;
     justify-content: center;
@@ -156,7 +156,7 @@ header {
     color: var(--second-color);
 }
 
-#moon{
+#moon {
     font-size: 18px;
     color: var(--text-color);
     cursor: pointer;
@@ -334,9 +334,9 @@ li .active {
 
 
 
-.container{
+.container {
     display: grid;
-    grid-template-columns: repeat(8 , 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 5rem;
     position: relative;
     margin-top: 80px;
@@ -345,11 +345,11 @@ li .active {
     scrollbar-width: none;
 }
 
-.container::-webkit-scrollbar{
+.container::-webkit-scrollbar {
     display: none;
 }
 
-.arrow1 i{
+.arrow1 i {
     background-color: var(--text-color);
     color: var(--bg-color);
     font-size: 40px;
@@ -361,7 +361,7 @@ li .active {
     top: 220%;
 }
 
-.arrow2 i{
+.arrow2 i {
     background-color: var(--text-color);
     position: absolute;
     right: 14%;
@@ -626,7 +626,7 @@ footer {
         margin: 15px;
     }
 
-    .other{
+    .other {
         gap: 5px;
     }
 
@@ -648,12 +648,12 @@ footer {
 
     }
 
-    .arrow1 i{
+    .arrow1 i {
         left: 11%;
         top: 190%;
     }
-    
-    .arrow2 i{
+
+    .arrow2 i {
 
         right: 5%;
         top: 190%;
@@ -726,7 +726,7 @@ footer {
         padding: 15% 0%;
     }
 
-    .other{
+    .other {
         gap: 10px;
     }
 
@@ -760,12 +760,13 @@ footer {
     .team {
         margin-top: 50%;
     }
-    .arrow1 i{
+
+    .arrow1 i {
         left: 11%;
         top: 170%;
     }
-    
-    .arrow2 i{
+
+    .arrow2 i {
 
         right: 5%;
         top: 170%;
@@ -861,7 +862,7 @@ footer {
         display: block;
         padding: 25% 5%;
         width: 100%;
-        height: 100%;
+        height: auto;
         background-color: #E6D8CC;
         display: flex;
         flex-direction: column;
@@ -945,40 +946,74 @@ footer {
     }
 
 
-
-    .col-team {
-        background-color: #EFE2DA;
-        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
+    .container-mob {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        gap: 0rem;
         justify-content: center;
         align-items: center;
-        border-radius: 25px;
-        width: 300px;
-        height: 250px;
-    }
-
-    .img-team img {
-        width: 120px;
+        margin-top: 80px;
+        overflow-x: auto;
+        overflow-y: auto;
+        scrollbar-width: none;
         height: auto;
-        position: relative;
     }
 
-    .name-team h1 {
-        color: #0F2137;
-        font-size: 15px;
+    .container-mob::-webkit-scrollbar {
+        display: none;
     }
 
-    .name-team p {
+    .arrow1 i {
+        background-color: var(--text-color);
+        color: var(--bg-color);
+        font-size: 40px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.356);
+        z-index: 10001;
+        left: 11%;
+        top: 130%;
+    }
+
+    .arrow2 i {
+        background-color: var(--text-color);
+        position: absolute;
+        right: 14%;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.356);
+        top: 130%;
+        color: var(--bg-color);
+        font-size: 40px;
+        z-index: 10001;
+        border-radius: 50%;
+    }
+
+
+    .col-mob img {
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+
+
+    .details-col-mob {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-col-mob h1 {
+        font-weight: 500;
+        font-size: small;
+    }
+
+    .details-col-mob p {
+        font-size: small;
         color: var(--text-color);
-        font-size: 10px;
+        margin-bottom: 10px;
     }
-
-
-
-
-
-
-
 
 }

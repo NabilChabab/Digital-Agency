@@ -1,6 +1,6 @@
 const popup = document.querySelector(".popup");
 const close = document.querySelector(".remove");
-const name = document.querySelector(".name");
+const name1 = document.querySelector(".name");
 const desc = document.querySelector(".desc");
 const img = document.querySelector(".image");
 const btn1 = document.querySelectorAll("#btn1");
@@ -36,7 +36,7 @@ const images = [
 
 function showPopup(index) {
 
-    name.textContent = names[index];
+    name1.textContent = names[index];
     desc.textContent = descriptions[index];
     img.src = images[index];
     console.log(images[index]);
