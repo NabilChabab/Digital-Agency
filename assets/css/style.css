@@ -103,7 +103,7 @@ body {
 header {
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     padding: 20px 14%;
     background-color: var(--bg-color);
@@ -181,7 +181,7 @@ header {
 
 .line img {
     position: absolute;
-    right: 14%;
+    right: 27%;
 }
 
 .home {

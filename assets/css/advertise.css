@@ -19,15 +19,29 @@
 	font-display: swap;
   }
   
-:root{
-	--bg-color: #FFFFFF;
-	--text-color: black;
-	--second-color: #5a7184;
-	--main-color: #6e54fa;
-	--big-font: 6rem;
-	--h2-font: 3rem;
-	--p-font: 1.1rem;
+  :root {
+    --bg-color:  #0F2137;
+    --text-color: #ffffff;
+    --second-color: #0A8080;
+    --main-color: #0F2137;
+    --main-color2: #0F2137;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
 }
+
+
+.dark-theme{
+    --bg-color: #ffffff;
+    --text-color: #0F2137;
+    --second-color: #0A8080;
+    --main-color: #e6d8cc;
+    --main-color2: #FFF5ED;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
 body{
 	background: var(--bg-color);
 	color: var(--text-color);
@@ -53,7 +67,7 @@ header{
 
 .logo{
     display: flex;
-    color: black;
+    color: var(--text-color);
     font-size: 20px;
 }
 
@@ -65,19 +79,19 @@ header{
 
 .navlist a{
     position: relative;
-    color: black;
+    color: var(--text-color);
     margin: 0 20px;
     letter-spacing: 2px;
     transition: all .4s ease;
 }
 
 .navlist a:hover{
-    color: #0A8080;
+    color: var(--second-color);
 }
 
 .navlist a::after{
     position: absolute;
-    background-color: #0A8080;
+    background-color: var(--second-color);
     content: '';
     left: 0;
     bottom: 0;
@@ -91,7 +105,7 @@ header{
 }
 
 li .active{
-    color: #0A8080;
+    color: var(--second-color);
 }
 
 
@@ -103,14 +117,31 @@ li .active{
 }
 
 .btn{
-    color: black;
+    color: var(--text-color);
     letter-spacing: 2px;
     margin-right: 20px;
 }
 
+
 .btn2{
-    color: #0A8080;
-    position: relative;
+    color: var(--text-color);
+}
+
+.other{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.other a:last-child {
+    color: var(--second-color);
+}
+
+#moon{
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .line img{
@@ -131,13 +162,13 @@ li .active{
     align-items: center;
     padding: 8% 14%;
     text-align: start;
-    background-color: #FFF5ED;
+    background-color: var(--main-color);
     width: 100%;
     height: 100vh;
 }
 
 .title-sec h1{
-    color: black;
+    color: var(--text-color);
     font-size: 70px;
 }
 
@@ -146,13 +177,13 @@ li .active{
 }
 
 .title-sec p{
-    color: black;
+    color: var(--text-color);
     margin: 15px 0;
 }
 
 .getbtn{
-    background-color: #0A8080;
-    color: white;
+    background-color: var(--second-color);
+    color: var(--bg-color);
     letter-spacing: 1px;
     padding: 12px 22px;
     margin-top: 15px;
@@ -182,7 +213,7 @@ li .active{
 
 .cards p{
     font-size: 10px;
-    color: gray;
+    color: rgb(185, 185, 185);
     margin-top: 15px;
 }
 
@@ -206,7 +237,7 @@ li .active{
 .details h1{
     font-size: 20px;
     font-weight: 500;
-    color: rgb(34, 34, 34);
+    color: var(--text-color);
     margin-left: 20px;
 }
 
@@ -227,7 +258,7 @@ li .active{
 
 .cards2 p{
     font-size: 10px;
-    color: gray;
+    color: rgb(185, 185, 185);
     margin-top: 15px;
 }
 
@@ -256,7 +287,7 @@ li .active{
 .details h1{
     font-size: 20px;
     font-weight: 500;
-    color: rgb(34, 34, 34);
+    color: var(--text-color);
     margin-left: 20px;
 }
 
@@ -304,7 +335,7 @@ li .active{
 }
 
 .cad{
-    background-color: #FFF5ED;
+    background-color: var(--main-color);
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -331,7 +362,7 @@ li .active{
 }
 .details-col p{
     font-size: small;
-    color: black;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
@@ -366,7 +397,7 @@ li .active{
     align-items: center;
     text-align: start;
     gap: 3rem;
-    background-color: white;
+    background-color: var(--bg-color);
     width: 60%;
     padding: 3%;
 }
@@ -376,7 +407,7 @@ li .active{
 }
 .titles p{
     font-size: 10px;
-    color: black;
+    color: var(--text-color);
     width: 70%;
     margin-top: 10px;
 }
@@ -388,10 +419,10 @@ form input{
     padding: 15px 30px;
     width: 65%;
     border-radius: 10px;
-    color: black;
+    color: var(--text-color);
 }
 .txt3 p{
-    color: black;
+    color: var(--text-color);
     font-size: 8px;
     margin-top: 10px;
     margin-left: 2px;
@@ -434,7 +465,7 @@ footer{
 }
 
 .copy p{
-    color: black;
+    color: var(--text-color);
     font-size: small;
 }
 
@@ -446,7 +477,7 @@ footer{
 }
 
 .det-foot a{
-    color: black;
+    color: var(--text-color);
     margin-bottom: 10px;
     display: inline-flex;
 }
@@ -661,7 +692,7 @@ footer{
     }
 
     .details-mob p{
-        color: black;
+        color: var(--text-color);
         font-size: 15px;
         margin-bottom: 10px;
     }
@@ -699,7 +730,7 @@ footer{
     }
 
     .name-team p{
-        color: black;
+        color: var(--text-color);
         font-size: 10px;
     }
 

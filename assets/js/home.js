@@ -1,12 +1,11 @@
+//Dark Theme
 var icon = document.getElementById("moon");
-
-
 icon.onclick = function(){
   console.log(icon);
   document.body.classList.toggle("dark-theme");
 }
 
-
+//menu
 let menu = document.querySelector("#menu");
 let navbar = document.querySelector(".navlist");
 
@@ -17,11 +16,11 @@ menu.onclick = () => {
 }
 
 
-
+//GetData
 const name = document.querySelector(".btn2");
 name.innerHTML = localStorage.getItem("data");
 
-
+//Slider
 const slider = () => {
   const arrows = document.querySelectorAll(".slider .arr");
   const cards = document.querySelector(".slider .container");
@@ -29,7 +28,7 @@ const slider = () => {
   arrows.forEach(btn => {
     btn.addEventListener('click', () => {
       console.log(btn);
-      const direct = btn.id === "back" ? -0.5 : 0.5;
+      const direct = btn.id === "back" ? -0.25 : 0.25;
       const scroll = cards.clientWidth * direct;
       cards.scrollBy({ left: scroll, behavior: "smooth" })
     });
