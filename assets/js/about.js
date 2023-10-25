@@ -34,12 +34,6 @@ function showContent(index) {
 
 btn1.forEach((btn , index)=>{
     btn.addEventListener('click', () =>{
-        if(btn.classList.toggle('activequest')){
-            showContent(index);
-        }
-        else{
-            btn.classList.remove('activequest');
-        }
-        
+        showContent(index);
     });
 })
