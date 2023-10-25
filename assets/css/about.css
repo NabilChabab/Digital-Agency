@@ -526,6 +526,10 @@ footer{
         margin: 15px;
     }
 
+    .other{
+        gap: 10px;
+    }
+
     .support{
         text-align: center;
     }   

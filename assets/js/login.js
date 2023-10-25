@@ -38,21 +38,25 @@ const validateForm = () => {
 
     //email
     if(email.value.trim()==''){
-        setError(email,"email can't be empty");
+        setError(email);
+        email.nextElementSibling.textContent = "email can't be empty";
     }
     else if(isEmailValid(email.value)){
         setSuccess(email);
     }
     else{
-        setError(email,"choose a valid email");
+        setError(email);
+        email.nextElementSibling.textContent = "entre a valid email";
     }
 
     //password
     if(pass.value.trim()==''){
-        setError(pass,"password can't be empty");
+        setError(pass);
+        pass.nextElementSibling.textContent = "password can't be empty";
     }
     else if(pass.value.trim().length < 6 || pass.value.trim().length > 25 ){
-        setError(pass,"name must be max than 5 and less than 15");
+        setError(pass);
+        pass.nextElementSibling.textContent = "password can't be less than 6 characters";
     }
     else{
         setSuccess(pass);

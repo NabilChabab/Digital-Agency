@@ -35,9 +35,11 @@ function validateForm() {
     //username
     if(username.value.trim()==''){
         setError(username);
+        username.nextElementSibling.textContent = "name can't be empty";
     }
     else if(username.value.trim().length < 5 || username.value.trim().length > 15 ){
         setError(username);
+        username.nextElementSibling.textContent = "name can't be less than 5 characters";
     }
     else{
         setSuccess(username);
@@ -47,20 +49,24 @@ function validateForm() {
     //email
     if(email.value.trim()==''){
         setError(email);
+        email.nextElementSibling.textContent = "email can't be empty";
     }
     else if(isEmailValid(email.value)){
         setSuccess(email);
     }
     else{
         setError(email);
+        email.nextElementSibling.textContent = "entre a valid email";
     }
 
     //password
     if(pass.value.trim()==''){
         setError(pass);
+        pass.nextElementSibling.textContent = "password can't be empty";
     }
     else if(pass.value.trim().length < 6 || pass.value.trim().length > 25 ){
         setError(pass);
+        pass.nextElementSibling.textContent = "password can't be less than 6 characters";
     }
     else{
         setSuccess(pass);
@@ -70,9 +76,13 @@ function validateForm() {
 
     if(co_pass.value.trim()==''){
         setError(co_pass);
+        co_pass.nextElementSibling.textContent = "confirm password can't be empty";
+
     }
     else if(co_pass.value !== pass.value){
         setError(co_pass);
+        co_pass.nextElementSibling.textContent = "not muching";
+
     }
     else{
         setSuccess(co_pass);

@@ -509,6 +509,10 @@ footer{
         margin: 15px;
     }
 
+    .other{
+        gap: 0px;
+    }
+
     .advertise{
         text-align: center;
     }
@@ -533,6 +537,10 @@ footer{
 
     .navlist a{
         margin: 15px;
+    }
+
+    .other{
+        gap: 10px;
     }
 
     .advertise{
