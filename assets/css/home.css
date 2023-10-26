@@ -49,6 +49,7 @@
     --big-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
+    transition: all .4s ease-in-out;
 }
 
 body {
@@ -711,7 +712,7 @@ footer {
 @media screen and (max-width : 900px) and (min-width : 770px) {
 
     header {
-        padding: 20px 2%;
+        padding: 20px 3%;
     }
 
     .line img {

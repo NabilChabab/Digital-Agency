@@ -98,8 +98,6 @@ function setError(element){
         parent.classList.remove('success');
     }
     parent.classList.add('error');
-
-
 }
 
 function setSuccess(element){
