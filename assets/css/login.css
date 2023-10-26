@@ -19,10 +19,11 @@
 }
 
 :root {
-    --bg-color: #FFFFFF;
-    --text-color: black;
-    --second-color: #5a7184;
-    --main-color: #6e54fa;
+    --bg-color:  #0F2137;
+    --text-color: #ffffff;
+    --second-color: #0A8080;
+    --main-color: #0F2137;
+    --main-color2: #0F2137;
     --big-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -40,7 +41,7 @@ header {
     justify-content: space-evenly;
     width: 100%;
     padding: 20px 14%;
-    background-color: var(--bg-color);
+    background-color: transparent;
     transition: all .4s ease;
     z-index: 1000;
 }
@@ -51,7 +52,7 @@ header {
 
 .logo {
     display: flex;
-    color: black;
+    color: var(--bg-color);
     font-size: 20px;
 }
 
@@ -61,21 +62,29 @@ header {
     height: 30px;
 }
 
+.act{
+    color: var(--text-color);
+}
+
 .navlist a {
     position: relative;
-    color: black;
+    color: var(--text-color);
     margin: 0 20px;
     letter-spacing: 2px;
     transition: all .4s ease;
 }
 
+.navlist .black{
+    color: var(--main-color);
+}
+
 .navlist a:hover {
-    color: #0A8080;
+    color: var(--second-color);
 }
 
 .navlist a::after {
     position: absolute;
-    background-color: #0A8080;
+    background-color: var(--second-color);
     content: '';
     left: 0;
     bottom: 0;
@@ -96,13 +105,13 @@ header {
 }
 
 .btn {
-    color: #0A8080;
+    color: var(--second-color);
     letter-spacing: 2px;
     margin-right: 20px;
 }
 
 .btn2 {
-    color: #0A8080;
+    color: var(--second-color);
     position: relative;
 }
 
@@ -147,7 +156,7 @@ header {
 }
 
 .log p {
-    color: black;
+    color: var(--text-color);
 }
 
 form {
@@ -217,15 +226,15 @@ form {
     width: 100%;
     padding: 15px;
     font-size: 15px;
-    background-color: #02073E;
-    color: #fff;
+    background-color: var(--second-color);
+    color: var(--text-color);
     font-weight: bold;
     border: none;
     border-radius: 20px;
 }
 
 form a {
-    background-color: white;
+    background-color: var(--bg-color);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 10px;
@@ -243,7 +252,7 @@ form a img {
 
 form a span {
     vertical-align: middle;
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -266,7 +275,7 @@ form .err {
 }
 
 .reg h1 {
-    color: black;
+    color: var(--text-color);
     font-size: 13px;
     margin-right: 10px;
 }
@@ -297,7 +306,7 @@ form .err {
     }
 
     /* header {
-        background-color: #0A8080;
+        background-color: var(--second-color);
         bottom: -2%;
         position: fixed;
         display: flex;
@@ -359,7 +368,7 @@ form .err {
     }
 
     .log p {
-        color: black;
+        color: var(--text-color);
     }
 
     form {
