@@ -38,4 +38,4 @@ To get a copy of this project up and running on your local machine, follow these
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/NabilChabab/digital-agency.git
+   git clone https://github.com/NabilChabab/Digital-Agency.git
