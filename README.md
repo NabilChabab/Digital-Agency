@@ -14,7 +14,8 @@ This is a simple digital agency website project consisting of four main pages: H
 
 You can view a live demo of this project [here](#). 
 
-![Demo Screenshot](screenshot.png)
+![Demo Screenshot](![Screenshot 2023-10-26 095433](https://github.com/NabilChabab/Digital-Agency/assets/119127098/bed746be-6e55-4b5c-abfe-bbbf97cce432)
+)
 
 ## Features
 
