@@ -3,7 +3,6 @@ const username = document.querySelector("#name");
 const email = document.querySelector("#email");
 const pass = document.querySelector("#password");
 const co_pass = document.querySelector("#confirm");
-const msg1 = document.querySelector(".err-msg");
 
 
 form.addEventListener('submit' , (event) =>{

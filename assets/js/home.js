@@ -30,7 +30,10 @@ const slider = () => {
       console.log(btn);
       const direct = btn.id === "back" ? -0.25 : 0.25;
       const scroll = cards.clientWidth * direct;
-      cards.scrollBy({ left: scroll, behavior: "smooth" })
+      cards.scrollBy({ 
+        left: scroll, 
+        behavior: "smooth" 
+      })
     });
   });
 }
