@@ -19,8 +19,8 @@ You can view a live demo of this project [here](#).
 
 ## Features
 
-- Home Page: An introduction to your digital agency.
-- About Page: Information about your agency's history and team.
+- Home Page: An introduction of the digital agency.
+- About Page: Information about our agency's history and team.
 - Advertise Page: Details about the services and advertising options.
 - Support Page: Contact information for customer support.
 
